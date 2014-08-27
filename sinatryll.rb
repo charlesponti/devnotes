@@ -22,7 +22,7 @@ module Sinatryll
     set :views, './views'
     set :public_folder, './public'
 
-    @@site = Sinatryll::Site.new title: 'BARD'
+    @@site = Sinatryll::Site.new title: 'Dev Notes'
 
     get '/notes/:category' do
       @category = get_category(params[:category])
