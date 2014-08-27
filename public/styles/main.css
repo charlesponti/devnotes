@@ -1,3 +1,12 @@
+.content {
+  padding: 1rem;
+}
 
+.directory-posts {
+  padding: 1rem;
+  margin: 1rem;
+}
 
-/*# sourceMappingURL=main.css.map */
+.directory-posts h4 {
+  margin-bottom: 2.5rem;
+}
