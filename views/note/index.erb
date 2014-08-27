@@ -1,0 +1,13 @@
+<% category.sub_directories.each do |subdir| %>
+    <a href=<%= subdir.name %>>
+      <%= subdir.name %>
+    </a>
+<% end %>
+
+<% category.posts.each do |post| %>
+  <h4>
+    <a href=<%= post.url %>>
+      <%= post.name.capitalize %>
+    </a>
+  </h4>
+<% end %>

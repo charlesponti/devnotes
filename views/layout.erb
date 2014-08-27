@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= site.title %></title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <%= erb :navbar, locals: { site: site } %>
+
+    <%= erb :categories, locals: { categories: site.categories } %>
+
+    <section class="content col-md-9">
+      <%= yield %>
+    </section>
+  </div>
+  
+  <!-- Javascript -->
+  <script type="text/javascript" src="/vendor/jquery/dist/jquery.min.js"></script>
+</body>
+
+</html>

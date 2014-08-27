@@ -1,0 +1,16 @@
+<section class="categories col-md-3">
+  <h3>Categories</h3>
+  <ul class="nav nav-pills nav-stacked">
+    <% categories.each do |category| %>
+        <li>
+          <a href="/notes/<%= category.name %>">
+            <!-- Badge for number category posts -->
+            <span class="badge pull-right">
+              <%= category.posts.length %>
+            </span>
+            <%= category.name.capitalize %>
+          </a>
+        </li>
+    <% end %>
+  </ul>
+</section>
