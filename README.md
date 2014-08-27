@@ -1,6 +1,4 @@
-Sinatryll
+Dev Notes
 =========
 
-![Sinatryll](http://i.telegraph.co.uk/multimedia/archive/01402/frankSinatra_1402870c.jpg)
-
-A Classy Jekyll Alternative.
+A collection of notes to help you become a rockstar developer.
