@@ -67,7 +67,40 @@ The following is a list of Hypertext Transfer Protocol (HTTP) response status co
 
 * **5xx** Server Error
 
-----
+## IP Address
+
+```
+➜  ~  nslookup generalassemb.ly
+
+Server:   194.168.4.100
+Address:  194.168.4.100#53
+
+Non-authoritative answer:
+Name: generalassemb.ly
+Address: 54.225.83.175
+Name: generalassemb.ly
+Address: 174.129.230.197
+Name: generalassemb.ly
+Address: 107.20.230.140
+
+```
+
+An Internet Protocol address (IP address) is a numerical label assigned to each 
+device (e.g., computer, printer) participating in a computer network that uses 
+the Internet Protocol for communication. An IP address serves two principal 
+functions: host or network interface identification and location addressing. Its 
+role has been characterized as follows: "A name indicates what we seek. An 
+address indicates where it is. A route indicates how to get there."
+
+The designers of the Internet Protocol defined an IP address as a 32-bit number
+and this system, known as Internet Protocol Version 4 (IPv4), is still in use 
+today. However, due to the enormous growth of the Internet and the predicted 
+depletion of available addresses, a new version of IP (IPv6), using 128 bits 
+for the address, was developed in 1995. IPv6 was standardized as RFC 2460 in 
+1998, and its deployment has been ongoing since the mid-2000s.
+
+IP addresses are binary numbers, but they are usually stored in text files and 
+displayed in human-readable notations, such as 172.16.254.1 (for IPv4), and 2001:db8:0:1234:0:567:8:1 (for IPv6).
 
 ## API
 
