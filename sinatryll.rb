@@ -13,7 +13,7 @@ module Sinatryll
       end
       
       def notes_directory
-        'notes'
+        'files'
       end
       
     end
