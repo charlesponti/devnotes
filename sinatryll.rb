@@ -3,6 +3,7 @@ require "rdiscount"
 require './lib/helpers/SysManager'
 require "./lib/site"
 require "./lib/category"
+require "pry"
 
 module Sinatryll
   class App < Sinatra::Application
@@ -41,16 +42,20 @@ module Sinatryll
 
     get '/:file' do 
       @path = "views/static/#{params[:file]}.md"
-      @name = File.basename(@path, ".*" )
-      @file = RDiscount.new(File.read(@path), :smart, :filter_html).to_html
-      erb :static, locals: { 
-        site: @@site, 
-        file: @file,
-        name: @name
-      }, layout: true
+      if File.exists? @path
+        @name = File.basename(@path, ".*" )
+        @file = RDiscount.new(File.read(@path), :smart, :filter_html).to_html
+        erb :static, locals: { 
+          site: @@site, 
+          file: @file,
+          name: @name
+        }, layout: true
+      else
+        redirect to('/')
+      end
     end
 
-    get '/' do
+    get '/*' do
       root_path
     end
 
