@@ -11,7 +11,7 @@
   <div class="container">
     <%= erb :navbar, locals: { site: site } %>
 
-    <%= erb :categories, locals: { categories: site.categories } %>
+    <%= erb :categories, locals: { categories: site.categories.sort! { |a,b| a.name.downcase <=> b.name.downcase } } %>
 
     <section class="content col-md-9">
       <%= yield %>
