@@ -2,4 +2,26 @@
   height: 600px;
   overflow: auto; }
 
+.hljs {
+  background: #0F0101; }
+
+.hljs, .hljs-subst, .hljs-tag .hljs-title, .nginx .hljs-title {
+  color: #c72020; }
+
+.html .hljs-title, .xml .hljs-title {
+  color: #745cad; }
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 -15px 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #180707;
+  border: 1px solid #100202;
+  border-radius: 0px; }
+
 /*# sourceMappingURL=main.css.map */
