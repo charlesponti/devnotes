@@ -13,11 +13,7 @@ module Sinatryll
       @path = create_path(parent)
       @file = File.open(@path)
       name = File.basename(@path, ".*" ).split("_").map { |w| w.capitalize }
-      if name.length > 1
-        @name = name.join(" ")
-      else
-        @name = name
-      end
+      @name = name.join(" ")
       @id = "#{@@id += 1}-#{name.join("_")}"
       @url = "/notes/#{@category}/#{@id}"
       @markdown = File.read(@path)
