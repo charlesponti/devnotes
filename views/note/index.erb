@@ -1,15 +1,39 @@
-<% category.sub_directories.each do |subdir| %>
-    <a href=<%= subdir.name %>>
-      <%= subdir.name %>
-    </a>
+<% if !category.sub_directories.empty? %>
+  <section class="panel panel-default">
+    <section class="panel-heading">
+      <h4 class="text-center"> 
+        <%= category.name.capitalize %> Sub Categories 
+      </h4>
+    </section>
+
+    <ul class="list-group">
+      <% category.sub_directories.each do |subdir| %>
+        <li class="list-group-item">
+          <h4>
+            <a href=<%= subdir.name %>>
+              <%= subdir.name %>
+            </a>
+          </h4>
+        </li>
+      <% end %>
+    </ul>
+  </section>
 <% end %>
 
-<section class="directory-posts">
-  <% category.posts.each do |post| %>
-    <h4>
-      <a href=<%= post.url %>>
-        <%= post.name %>
-      </a>
-    </h4>
-  <% end %>  
+<section class="panel panel-default">
+  <section class="panel-heading">
+    <h4 class="text-center"> <%= category.name.capitalize %> </h4>
+  </section>
+
+  <ul class="list-group">
+    <% category.posts.each do |post| %>
+      <li class="list-group-item">
+        <h4>
+          <a href=<%= post.url %>>
+            <%= post.name.capitalize %>
+          </a>
+        </h4>
+      </li>
+    <% end %>
+  </ul>
 </section>
