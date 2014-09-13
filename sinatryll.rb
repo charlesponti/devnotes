@@ -40,9 +40,14 @@ module Sinatryll
     end
 
     get '/:file' do 
-      path = "views/static/#{params[:file]}.md"
-      @file = RDiscount.new(File.read(path), :smart, :filter_html).to_html
-      erb :static, locals: { site: @@site, file: @file }, layout: true
+      @path = "views/static/#{params[:file]}.md"
+      @name = File.basename(@path, ".*" )
+      @file = RDiscount.new(File.read(@path), :smart, :filter_html).to_html
+      erb :static, locals: { 
+        site: @@site, 
+        file: @file,
+        name: @name
+      }, layout: true
     end
 
     get '/' do
