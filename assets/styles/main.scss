@@ -2,6 +2,10 @@
   padding-bottom: 65px;
 }
 
+.list-group-item:hover {
+  background: rgb(241, 249, 255);
+}
+
 .note {
   height: 600px;
   overflow: auto;
