@@ -12,6 +12,7 @@ group :development do
   gem "pry"
   gem "rerun"
   gem "sass"
+  gem "pry"
   # Testing
   gem "rspec"
 end

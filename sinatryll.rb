@@ -3,7 +3,6 @@ require "rdiscount"
 require './lib/helpers/SysManager'
 require "./lib/site"
 require "./lib/category"
-require "pry"
 
 module Sinatryll
   class App < Sinatra::Application
