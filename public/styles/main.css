@@ -1,16 +1,5 @@
-.content {
-  padding: 1rem;
-}
+.note {
+  height: 600px;
+  overflow: auto; }
 
-.directory-posts {
-  padding: 1rem;
-  margin: 1rem;
-}
-
-.directory-posts h4 {
-  margin-bottom: 2.5rem;
-}
-
-.bobble-head {
-  border-radius: 100%;
-}
+/*# sourceMappingURL=main.css.map */
