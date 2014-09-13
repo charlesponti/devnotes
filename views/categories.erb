@@ -1,16 +1,21 @@
-<section class="categories col-md-3">
-  <h3>Categories</h3>
-  <ul class="nav nav-pills nav-stacked">
-    <% categories.each do |category| %>
-        <li>
-          <a href="/notes/<%= category.name %>">
-            <!-- Badge for number category posts -->
-            <span class="badge pull-right">
-              <%= category.posts.length %>
-            </span>
-            <%= category.name %>
-          </a>
-        </li>
-    <% end %>
-  </ul>
-</section>
+<div class="col-md-3">
+  <section class="panel panel-default ">
+    <section class="panel-heading text-center">
+      <h3 class="">Categories</h3>
+    </section>
+
+    <ul class="list-group">
+      <% categories.each do |category| %>
+          <li class="list-group-item">
+            <a href="/notes/<%= category.name %>">
+              <!-- Badge for number category posts -->
+              <span class="badge pull-right">
+                <%= category.posts.length %>
+              </span>
+              <%= category.name %>
+            </a>
+          </li>
+      <% end %>
+    </ul>
+  </section>
+</div>
