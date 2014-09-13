@@ -10,7 +10,6 @@ var makeKittyPurr = function() {
 
 1. Assign to a variable
 2. Anonymously (callback or immediate execution)
-3. //
 
 ## Best Practices
 
