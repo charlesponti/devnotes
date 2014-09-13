@@ -33,27 +33,11 @@ Allows developers to jump from one stage to another and back again depending on 
 
 ### 1. Design
 
-#### User Experience
-
-![User Experience](http://www.everyinteraction.com/wp-content/uploads/2012/10/ux-diagram.png)
-
-User experience (UX) involves a person's behaviors, attitudes, and emotions about using a particular product, system or service. User experience includes the practical, experiential, affective, meaningful and valuable aspects of human-computer interaction and product ownership. Additionally, it includes a person’s perceptions of system aspects such as utility, ease of use and efficiency. User experience may be considered subjective in nature to the degree that it is about individual perception and thought with respect to the system. User experience is dynamic as it is constantly modified over time due to changing usage circumstances and changes to individual systems as well as the wider usage context in which they can be found.
-
-#### Careers in Web Design
-* **User Researcher** Indentifies user behaviors, goals, and needs through interviews, studies, and surveys
-
-* **Information Architect(IA)** Defines the structure of the system, how content is described, organized, and discovered. For example, this can include designing a user's journey from the homepage of a shopping web application to the checkout page.
-
-* **Interaction Designer(IxD)** Defines interactions, user flows, wireframes, and affordances of a system
-
-* **UI Developer** Builds the user interface
-
 ### 2. Development
 
 Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest static single page of plain text to the most complex web-based internet applications, electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development. Among web professionals, "web development" usually refers to the main non-design aspects of building web sites: writing markup and coding.
 
-#### What You
-How are users accessing your site?
+#### How are users accessing your site?
 * desktop or mobile?
 * phone or tablet?
 * internationalization
