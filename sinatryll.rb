@@ -29,14 +29,18 @@ module Sinatryll
       if (@category)
         erb :'note/index', locals: { site: @@site, category: @category }, layout: true
       else
-        root_path
+        redirect to('/')
       end
     end
 
     get "/notes/:category/:post_id" do
       @category = get_category(params[:category])
       @post = @category.get_post(params[:post_id])
-      erb :'note/show', locals: { site: @@site, post: @post }, layout: true
+      if @post
+        erb :'note/show', locals: { site: @@site, post: @post }, layout: true
+      else
+        redirect to('/')
+      end
     end
 
     get '/:file' do 
