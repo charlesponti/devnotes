@@ -1,6 +1,5 @@
 require "rdiscount"
 
-
 module Sinatryll
   class Note
     attr_accessor :file, :path, :html, :name, :category, :id, :url
