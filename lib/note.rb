@@ -1,8 +1,9 @@
 require "rdiscount"
+require "yaml"
 
 module Sinatryll
   class Note
-    attr_accessor :file, :path, :html, :name, :category, :id, :url
+    attr_accessor :file, :path, :html, :name, :category, :id, :url, :front_matter
 
     @@id = 0
 
@@ -15,7 +16,13 @@ module Sinatryll
       @name = name.join(" ")
       @id = "#{@@id += 1}-#{name.join("_")}"
       @url = "/notes/#{@category}/#{@id}"
-      @markdown = File.read(@path)
+      @body = File.read(@path).split("---settings")
+      if @body.length > 1
+        @front_matter = YAML.load(@body[1])
+        @markdown = @body[2..-1].join("")
+      else
+        @markdown = @body.join("")
+      end
       @html = RDiscount.new(@markdown, :smart, :filter_html).to_html
       site.notes << self
     end

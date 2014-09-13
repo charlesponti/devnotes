@@ -1,3 +1,10 @@
+---settings
+
+title: Position
+categories: Zoom
+
+---settings
+
 ### Static
 
 ```css
