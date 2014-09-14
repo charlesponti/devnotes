@@ -12,7 +12,7 @@ module Fossa
 
     def get_category(category)
       cats = @categories.select do |c|
-        c.name === category 
+        c.name.downcase === category.downcase
       end
       cats[0]
     end
