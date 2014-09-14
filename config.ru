@@ -1,3 +1,3 @@
-require "./sinatryll"
+require "./fossa/lib/fossa"
 
-run Sinatryll::App
+run Fossa::App
