@@ -13,8 +13,10 @@ module Fossa
     end
 
     def get_category(category)
-      @categories.select { |c| c.name == category }
-      @categories[0]
+      cats = @categories.select do |c|
+        c.name === category 
+      end
+      cats[0]
     end
     
   end

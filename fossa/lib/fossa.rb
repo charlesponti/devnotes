@@ -27,6 +27,8 @@ module Fossa
 
   NOTES_DIR = Fossa::CONFIG["notes"]
 
+  STATIC_DIR = Fossa::CONFIG["static_dir"]
+  
   SITE = Fossa::Site.new title: Fossa::CONFIG["title"]
 
   CATEGORIES = SysManager.get_directories(Fossa::NOTES_DIR).map do |category|
