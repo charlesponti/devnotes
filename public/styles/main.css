@@ -14,6 +14,9 @@
 .hljs, .hljs-subst, .hljs-tag .hljs-title, .nginx .hljs-title {
   color: #c72020; }
 
+.hljs-string {
+  color: #a1d84d; }
+
 .html .hljs-title, .xml .hljs-title {
   color: #745cad; }
 
@@ -29,5 +32,10 @@ pre {
   background-color: #180707;
   border: 1px solid #100202;
   border-radius: 0px; }
+
+p {
+  margin: 30px;
+  font-size: 1.3em;
+  line-height: 1.6em; }
 
 /*# sourceMappingURL=main.css.map */

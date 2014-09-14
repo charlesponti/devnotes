@@ -19,6 +19,14 @@
   color: rgb(199, 32, 32);
 }
 
+.hljs-string {
+  color: rgb(161, 216, 77);
+}
+
+// .hljs-keyword {
+//   color: rgb(237, 119, 237);
+// }
+
 // .ruby {
 //   .hljs-title {
 //     color: rgb(203, 52, 203);
@@ -43,4 +51,10 @@ pre {
   background-color: #180707;
   border: 1px solid #100202;
   border-radius: 0px;
+}
+
+p {
+  margin: 30px;
+  font-size: 1.3em;
+  line-height: 1.6em;
 }
