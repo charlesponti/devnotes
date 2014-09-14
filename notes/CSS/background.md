@@ -4,7 +4,7 @@ title: Styling - Background
 
 ---settings
 
-## Background Repeat
+## `background-repeat`
 
 ### repeat
 
