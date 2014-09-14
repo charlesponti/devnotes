@@ -6,15 +6,17 @@
 
     <ul class="list-group">
       <% categories.each do |category| %>
-          <li class="list-group-item">
-            <a href="/notes/<%= category.name %>">
-              <!-- Badge for number category posts -->
-              <span class="badge pull-right">
-                <%= category.posts.length %>
-              </span>
-              <%= category.name %>
-            </a>
-          </li>
+          <% if !category.is_subdirectory %>
+            <li class="list-group-item">
+              <a href="/notes/<%= category.name %>">
+                <!-- Badge for number category posts -->
+                <span class="badge pull-right">
+                  <%= category.posts.length %>
+                </span>
+                <%= category.name %>
+              </a>
+            </li>
+          <% end %>
       <% end %>
     </ul>
   </section>

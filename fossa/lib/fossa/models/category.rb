@@ -2,18 +2,22 @@ require_relative "./note"
 
 module Fossa
   class Category
-    attr_accessor :posts, :path, :name, :sub_directories
+    attr_accessor :posts, :path, :name, :sub_directories, :directory
 
     def initialize(site, directory, parent='')
       @name = directory
       @parent = parent
       @path = create_path(parent)
+
       @sub_directories = SysManager.get_directories(@path).map do |subdir|
         self.class.new site, subdir, directory
       end
+
       @posts = SysManager.get_files(@path).map do |file|
         Fossa::Note.new site, @name, file, parent
       end
+
+      Fossa::SITE.categories << self
     end
 
     def is_subdirectory
