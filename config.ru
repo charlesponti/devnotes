@@ -1,3 +1,3 @@
-require_relative "./fossa/lib/fossa"
+require "./fossa/lib/fossa"
 
 run Fossa::App
