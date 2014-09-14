@@ -2,10 +2,6 @@
   padding-top: 65px;
   padding-bottom: 65px; }
 
-.note {
-  height: 600px;
-  overflow: auto; }
-
 .block-list li a {
   display: block; }
   .block-list li a:hover {
