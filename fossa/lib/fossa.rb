@@ -32,6 +32,6 @@ module Fossa
   SITE = Fossa::Site.new title: Fossa::CONFIG["title"]
 
   SysManager.get_directories(Fossa::NOTES_DIR).map do |category|
-    Fossa::Category.new category, "#{category}"
+    Fossa::Category.new category
   end
 end

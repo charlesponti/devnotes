@@ -6,6 +6,7 @@ module Fossa
 
     get '/notes/:category' do
       @category = Fossa::SITE.get_category(params[:category])
+      puts @category.title if @category.is_subdirectory
       if (@category)
         erb :'note/index', locals: { site: Fossa::SITE, category: @category }, layout: true
       else
@@ -13,11 +14,32 @@ module Fossa
       end
     end
 
-    get "/notes/:category/:post_id" do
+    get "/notes/:category/:post" do
       @category = Fossa::SITE.get_category(params[:category])
-      @post = @category.get_post(params[:post_id])
-      if @post
-        erb :'note/show', locals: { site: Fossa::SITE, post: @post }, layout: true
+      sub_dir = @category.has_subcategory(params[:post])
+      if sub_dir
+        erb :'note/index', locals: { site: Fossa::SITE, category: sub_dir }, layout: true
+      else
+        @post = @category.get_post(params[:post])
+        if @post
+          erb :'note/show', locals: { site: Fossa::SITE, post: @post }, layout: true
+        else
+          redirect to("/")
+        end
+      end
+    end
+
+    get "/notes/:category/:subcategory/:post" do
+      @category = Fossa::SITE.get_category(params[:category])
+      subcategory = @category.has_subcategory(params[:subcategory])
+      puts "cats"
+      if subcategory
+        @post = subcategory.get_post(params[:post])
+        if @post
+          erb :'note/show', locals: { site: Fossa::SITE, post: @post }, layout: true
+        else
+          redirect to("/")
+        end
       else
         redirect to("/")
       end
