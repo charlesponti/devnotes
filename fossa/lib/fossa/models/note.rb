@@ -14,7 +14,7 @@ module Fossa
       @file = File.open(@path)
       name = File.basename(@path, ".*" ).split("_").map { |w| w.capitalize }
       @name = name.join(" ")
-      @id = "#{@@id += 1}-#{name.join("_")}"
+      @id = name.join("_").downcase.gsub("_", "-")
       @url = "/notes/#{@category}/#{@id}"
       @body = File.read(@path).split("---settings")
       if @body.length > 1

@@ -9,14 +9,18 @@ module Fossa
       if (@category)
         erb :'note/index', locals: { site: Fossa::SITE, category: @category }, layout: true
       else
-        root_path
+        redirect to("/")
       end
     end
 
     get "/notes/:category/:post_id" do
       @category = Fossa::SITE.get_category(params[:category])
       @post = @category.get_post(params[:post_id])
-      erb :'note/show', locals: { site: Fossa::SITE, post: @post }, layout: true
+      if @post
+        erb :'note/show', locals: { site: Fossa::SITE, post: @post }, layout: true
+      else
+        redirect to("/")
+      end
     end
 
     get '/favicon.ico' do
@@ -27,7 +31,11 @@ module Fossa
       path = "fossa/lib/fossa/views/static/#{params[:file]}.md"
       @name = File.basename(path, ".*")
       @file = RDiscount.new(File.read(path), :smart, :filter_html).to_html
-      erb :static, locals: { site: Fossa::SITE, file: @file, name: @name }, layout: true
+      if @file
+        erb :static, locals: { site: Fossa::SITE, file: @file, name: @name }, layout: true
+      else
+        redirect to("/")
+      end
     end
 
     get '/' do
