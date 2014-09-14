@@ -1,16 +1,8 @@
 # GitHub
 
-![GitHub](../../assets/images/github.jpg)
-
-- A service that hosts Git repositories
-
-- Allows you to easily distribute code to others by sharing your repository
-
-- Lets you view your code online easily
-
-- Free to use as long as you make your code public
-
-- Private repositories cost a monthly fee
+Github is a service that hosts Git repositories. It allows developers to easily 
+distribute code to others by sharing their repository. It is free to use as long 
+as your repositories are public, while having private repositories cost a monthly fee.
 
 ## Fork
 
@@ -37,4 +29,3 @@ to that original repository. If you want to have the clone in your own GitHub,
 go to the GitHub site, create a new repository, copy its HTTPS clone URL which
 you will find on the right-hand side of the repository's main page.
 
-![GitHub HTTPS Clone URL](../../assets/images/git-https-clone-url.png)
