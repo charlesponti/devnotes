@@ -8,9 +8,6 @@ module Fossa
       @notes = []
       @title = options[:title] || 'Fossa'
       @categories = []
-      # SysManager.get_directories(Fossa::NOTES_DIR).map do |category|
-      #   Fossa::Category.new self, category
-      # end
     end
 
     def get_category(category)
