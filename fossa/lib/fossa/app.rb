@@ -28,10 +28,10 @@ module Fossa
     end
 
     get '/:file' do
-      path = "fossa/lib/fossa/views/static/#{params[:file]}.md"
-      @name = File.basename(path, ".*")
-      @file = RDiscount.new(File.read(path), :smart, :filter_html).to_html
-      if @file
+      path = "#{Fossa::STATIC_DIR}/#{params[:file]}.md"
+      if File.exists? path
+        @name = File.basename(path, ".*")
+        @file = RDiscount.new(File.read(path), :smart, :filter_html).to_html
         erb :static, locals: { site: Fossa::SITE, file: @file, name: @name }, layout: true
       else
         redirect to("/")
