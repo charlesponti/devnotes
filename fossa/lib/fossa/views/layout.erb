@@ -11,10 +11,13 @@
   <div class="container-fluid">
     <%= erb :navbar, locals: { site: site } %>
 
-    <%= erb :categories, locals: { categories: site.categories.sort! { |a,b| a.name.downcase <=> b.name.downcase } } %>
-
-    <section class="content col-md-9">
-      <%= yield %>
+    <section class="content row">
+      <section class="col-md-3">
+        <%= erb :categories, locals: { categories: site.categories.sort! { |a,b| a.name.downcase <=> b.name.downcase } } %>
+      </section>
+      <section class="col-md-9">
+        <%= yield %>
+      </section>
     </section>
 
     <div id="footer" class="container">

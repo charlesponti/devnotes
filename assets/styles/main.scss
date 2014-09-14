@@ -1,4 +1,5 @@
 .content {
+  padding-top: 65px;
   padding-bottom: 65px;
 }
 
@@ -23,6 +24,7 @@
   color: rgb(161, 216, 77);
 }
 
+
 // .hljs-keyword {
 //   color: rgb(237, 119, 237);
 // }
@@ -33,6 +35,7 @@
 //   }
 // }
 
+/// Bootstrap Overrides
 .html, .xml {
   .hljs-title {
     color: rgb(116, 92, 173);
@@ -57,4 +60,9 @@ p {
   margin: 30px;
   font-size: 1.3em;
   line-height: 1.6em;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

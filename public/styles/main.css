@@ -1,4 +1,5 @@
 .content {
+  padding-top: 65px;
   padding-bottom: 65px; }
 
 .list-group-item:hover {
@@ -37,5 +38,9 @@ p {
   margin: 30px;
   font-size: 1.3em;
   line-height: 1.6em; }
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */
