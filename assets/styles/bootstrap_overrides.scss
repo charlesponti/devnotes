@@ -1,0 +1,54 @@
+/**
+ * This file contains the styles that override those of Bootstrap
+ */
+.panel-default {
+  .panel-heading {
+    color: #74E486;
+    background-color: #23241f;
+  }
+}
+
+.panel-heading {
+  border: none;
+}
+
+.navbar-default {
+  background-color: #23241f;
+  .navbar-nav>li>a,
+  .navbar-brand,
+  a {
+    color: #74E486;
+  }
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 -15px 10px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  border-radius: 0px;
+  border: 0px;
+  background-color: #23241f;
+}
+
+p {
+  margin: 30px;
+  font-size: 1.3em;
+  line-height: 1.6em;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.list-group-item:hover {
+  a {
+    color: #74E486;
+  }
+  background-color: #23241f;
+}
+

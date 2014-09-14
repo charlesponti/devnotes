@@ -52,4 +52,3 @@ switch cat {
     fmt.Println("You're an old cat! Yuck!")
 }
 ```
-Another way of handlign

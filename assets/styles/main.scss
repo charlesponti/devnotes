@@ -3,66 +3,21 @@
   padding-bottom: 65px;
 }
 
-.list-group-item:hover {
-  background: rgb(241, 249, 255);
-}
-
 .note {
   height: 600px;
   overflow: auto;
 }
 
-.hljs {
-  background: #0F0101;
-}
-
-.hljs, .hljs-subst, .hljs-tag .hljs-title, .nginx .hljs-title {
-  color: rgb(199, 32, 32);
-}
-
-.hljs-string {
-  color: rgb(161, 216, 77);
-}
-
-
-// .hljs-keyword {
-//   color: rgb(237, 119, 237);
-// }
-
-// .ruby {
-//   .hljs-title {
-//     color: rgb(203, 52, 203);
-//   }
-// }
-
-/// Bootstrap Overrides
-.html, .xml {
-  .hljs-title {
-    color: rgb(116, 92, 173);
+.block-list {
+  li {
+    a {
+      display: block;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
-pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 -15px 10px;
-  font-size: 15px;
-  line-height: 1.42857143;
-  color: #333;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #180707;
-  border: 1px solid #100202;
-  border-radius: 0px;
-}
-
-p {
-  margin: 30px;
-  font-size: 1.3em;
-  line-height: 1.6em;
-}
-
-h1, .h1, h2, .h2, h3, .h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+@import "bootstrap_overrides";
+@import "highlight_overrides";

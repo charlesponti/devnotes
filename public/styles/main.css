@@ -2,24 +2,31 @@
   padding-top: 65px;
   padding-bottom: 65px; }
 
-.list-group-item:hover {
-  background: #f1f9ff; }
-
 .note {
   height: 600px;
   overflow: auto; }
 
-.hljs {
-  background: #0F0101; }
+.block-list li a {
+  display: block; }
+  .block-list li a:hover {
+    text-decoration: none; }
 
-.hljs, .hljs-subst, .hljs-tag .hljs-title, .nginx .hljs-title {
-  color: #c72020; }
+/**
+ * This file contains the styles that override those of Bootstrap
+ */
+.panel-default .panel-heading {
+  color: #74E486;
+  background-color: #23241f; }
 
-.hljs-string {
-  color: #a1d84d; }
+.panel-heading {
+  border: none; }
 
-.html .hljs-title, .xml .hljs-title {
-  color: #745cad; }
+.navbar-default {
+  background-color: #23241f; }
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-brand,
+  .navbar-default a {
+    color: #74E486; }
 
 pre {
   display: block;
@@ -27,12 +34,11 @@ pre {
   margin: 0 -15px 10px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #333;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #180707;
-  border: 1px solid #100202;
-  border-radius: 0px; }
+  border-radius: 0px;
+  border: 0px;
+  background-color: #23241f; }
 
 p {
   margin: 30px;
@@ -42,5 +48,14 @@ p {
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.list-group-item:hover {
+  background-color: #23241f; }
+  .list-group-item:hover a {
+    color: #74E486; }
+
+/**
+ * This file contains styles that override those of HighlightJS.
+ */
 
 /*# sourceMappingURL=main.css.map */
