@@ -4,7 +4,17 @@ title: Styling - Background
 
 ---settings
 
-## Background repeat
+## Background Repeat
+
+### repeat
+
+```css
+  body {
+    background-repeat: repeat;
+  }
+```
+
+This setting will repeat the background image both horizontally and vertically.
 
 ### repeat-x
 
@@ -34,4 +44,4 @@ This setting will repeat the background image vertically.
   }
 ```
 
-This setting will repeat the background image both horizontally and vertically.
+This setting will stop the background-image from being repeated.
