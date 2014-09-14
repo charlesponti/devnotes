@@ -4,25 +4,42 @@ title: Introduction to jQuery
 
 ---settings
 
-
-## Manipulating HTML
-
-### `.html()`
+## jQuery
 
 ```js
-  $("h1").html("<div>Super Dooper</div>");
+$(function() {
+  /* When the page has finished loading, execute the code in this function */
+})
 ```
 
-The `.html()` function is used to change the HTML contents of an element. In the
-example above, all h1 elements on the page will have a `<div>` inside of them with
-the text `Super Dooper` inside of the `<div>`.
+* calls to jQuery functions can begin with either $ or jQuery
 
-### `.text()`
+* works "cross-browser", though newer versions of jQuery will be dropping support for Internet Explorer 6 & 7
+
+* Allows:
+  * DOM traversal
+  * CSS manipulation
+  * Event handling
+  * XHR requests
+  * Animation
+  * and more!
+
+* **Change CSS**
 
 ```js
-  $("h1").text("Super Dooper");
+  $('h1').css({
+    color: 'red'
+  });
+  /* this will set the color of all h1s to red */
 ```
 
-The `.text()` function is used to change the text contents of an element. In the
-example above, all h1 elements on the page will have the text `Super Dooper` 
-inside of them.
+* **Attach events to elements**
+
+```js
+  $('h3').click(function(event) {
+    $(this).hide();
+  });
+  /* When a h3 is click, it will get hidden */
+```
+
+You can attach an event to one element and manipulate anything on the page within the callback function. If an element has a default event that gets executed on a specific event, such as how `<a>` tags will open a webpage when they are clicked, you can include event.preventDefault() within the callback function to disable that default behaviour.
