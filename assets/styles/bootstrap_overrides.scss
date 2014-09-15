@@ -1,25 +1,25 @@
 /**
  * This file contains the styles that override those of Bootstrap
  */
-.panel-default {
-  .panel-heading {
-    color: #74E486;
-    background-color: #23241f;
-  }
-}
+// .panel-default {
+//   .panel-heading {
+//     color: #74E486;
+//     background-color: #23241f;
+//   }
+// }
 
 .panel-heading {
   border: none;
 }
 
-.navbar-default {
-  background-color: #23241f;
-  .navbar-nav>li>a,
-  .navbar-brand,
-  a {
-    color: #74E486;
-  }
-}
+// .navbar-default {
+//   background-color: #23241f;
+//   .navbar-nav>li>a,
+//   .navbar-brand,
+//   a {
+//     color: #74E486;
+//   }
+// }
 
 pre {
   display: block;
@@ -45,10 +45,10 @@ h1, .h1, h2, .h2, h3, .h3 {
   margin-bottom: 10px;
 }
 
-.list-group-item:hover {
-  a {
-    color: #74E486;
-  }
-  background-color: #23241f;
-}
+// .list-group-item:hover {
+//   a {
+//     color: #74E486;
+//   }
+//   background-color: #23241f;
+// }
 

@@ -10,19 +10,8 @@
 /**
  * This file contains the styles that override those of Bootstrap
  */
-.panel-default .panel-heading {
-  color: #74E486;
-  background-color: #23241f; }
-
 .panel-heading {
   border: none; }
-
-.navbar-default {
-  background-color: #23241f; }
-  .navbar-default .navbar-nav > li > a,
-  .navbar-default .navbar-brand,
-  .navbar-default a {
-    color: #74E486; }
 
 pre {
   display: block;
@@ -44,11 +33,6 @@ p {
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 10px;
   margin-bottom: 10px; }
-
-.list-group-item:hover {
-  background-color: #23241f; }
-  .list-group-item:hover a {
-    color: #74E486; }
 
 /**
  * This file contains styles that override those of HighlightJS.
