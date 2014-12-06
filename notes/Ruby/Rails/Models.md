@@ -4,8 +4,8 @@ The models of your application are representations of the data of your applicati
 
 To create a new model:
 
-```bash
-~> rails generate model Book
+```
+$ rails generate model Post
 ```
 
 This command will create a new file with a model template in the app/models folder.
@@ -27,14 +27,14 @@ To see a full list and explanation of all the possible options you can validate 
 ## Methods
 
 ### new
-```ruby
+```
 Book.new title: 'Meowcakes', author: 'Dr.Meowingtons', year: 4444
 ```
 
 This method creates a new instance of the model.
 
 ### create
-```ruby
+```
 Book.create title: 'Meowcakes', author: 'Dr.Meowingtons', year: 4444
 ```
 This method creates a new instance of the model and saves a new record in the database.
