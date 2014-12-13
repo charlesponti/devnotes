@@ -1,6 +1,5 @@
 # Module for system helper functions
 module SysManager
-
   class << self
     def get_directories(directory)
       Dir.entries(directory).select do |entry|
@@ -15,5 +14,4 @@ module SysManager
       end
     end
   end
-  
 end

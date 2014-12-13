@@ -1,0 +1,3 @@
+# BEM (Block-Element-Modifier)
+
+BEM, or Block-Element-Modifier, is a methodology for constructing the styles for a website's or web applicaton's styles. This approach is meant to "ensure that everyone participating in the development of a website is working with the same codebase and using the same terminology". The idea was crafted by members of the web development community who noticed that the system of crafting a website whereby a designer designs in Photoshop then a front-end developer constructs HTML & CSS then a back-end developer constructs server-side templates was broken. Anyone who has worked in this type of environment can agree that its difficult.

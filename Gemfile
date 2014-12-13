@@ -1,20 +1,16 @@
 source 'https://rubygems.org'
 
-gem "sinatra"
+gem 'sinatra'
 
-gem "rdiscount"
+gem 'rdiscount'
 
 # Server
-gem "thin"
+gem 'thin'
 
-
-gem "rake"
-gem "rerun"
-gem "sass"
-gem "pry"
+gem 'rake'
+gem 'rerun'
+gem 'sass'
+gem 'pry'
 
 # Testing
-gem "rspec"
-
-
-
+gem 'rspec'

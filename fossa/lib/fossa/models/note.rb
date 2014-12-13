@@ -1,9 +1,10 @@
-require "rdiscount"
-require "yaml"
+require 'pry'
+require 'rdiscount'
+require 'yaml'
 
 module Fossa
   class Note
-    attr_accessor :file, :path, :html, :name, :category, :id, :url, 
+    attr_accessor :file, :path, :html, :name, :category, :id, :url,
                   :front_matter, :parent
 
     @@id = 0
@@ -13,19 +14,23 @@ module Fossa
       @filename = filename
       @parent = parent
       @path = create_path
-      @file = File.open(@path)      
+      @file = File.open(@path)
 
       name = File.basename(@path, ".*" ).split("_").map { |w| w.capitalize }
       @name = name.join(" ")
       @id = name.join("_").downcase.gsub("_", "-")
       @url = create_url
+
+      binding.pry
       @body = File.read(@path).split("---settings")
+
       if @body.length > 1
         @front_matter = YAML.load(@body[1])
         @markdown = @body[2..-1].join("")
       else
         @markdown = @body.join("")
       end
+
       @html = RDiscount.new(@markdown, :smart, :filter_html).to_html
     end
 
