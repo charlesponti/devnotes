@@ -49,6 +49,11 @@ Theme rules describe how modules or layout will look.
 
 }
 
+/* Caption element within Example Module */
+.example-caption {
+
+}
+
 /* Example Module in hidden state */
 .example.is-hidden {
 
