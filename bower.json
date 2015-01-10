@@ -1,7 +1,7 @@
 {
-  "name": "sinatryll",
+  "name": "devnotes",
   "version": "0.0.0",
-  "homepage": "https://github.com/theponti/sinatryll",
+  "homepage": "https://github.com/theponti/devnotes",
   "authors": [
     "CJ Ponti <cjponti@gmail.com>"
   ],
@@ -12,5 +12,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "semantic": "~1.6.2"
+  }
 }
