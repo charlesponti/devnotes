@@ -25,7 +25,7 @@ var runSequence = require('run-sequence');
 gulp.task('markdown', function() {
   return gulp.src(['notes/**/*.md'])
     .pipe($.markdown())
-    .pipe(gulp.dest('src/views'));
+    .pipe(gulp.dest('src/views/notes'));
 });
 
 gulp.task('views', function() {
