@@ -3,3 +3,4 @@
 src/views/**
 templates.js
 node_modules
+public/*
