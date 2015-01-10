@@ -1,2 +1,5 @@
 .DS_Store
 .sass-cache
+src/views/**
+templates.js
+node_modules
