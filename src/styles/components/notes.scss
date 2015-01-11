@@ -9,7 +9,11 @@
             text-decoration: none;
         }
     }
-    
+
+    p {
+        text-align: justify
+    }
+
     & > [ui-view] {
         height: 100%;
         width: 95%;
