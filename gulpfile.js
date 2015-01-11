@@ -7,10 +7,8 @@
 global.isProd = false;
 
 var fs = require('fs');
-var walk = require('walk');
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var jsondir = require('jsondir');
 
 var browserify = require('browserify');
 var ngannotate = require('browserify-ngannotate');
