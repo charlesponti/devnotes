@@ -11,6 +11,7 @@
     "angular": "^1.3.8",
     "angular-animate": "^1.3.8",
     "angular-ui-router": "^0.2.13",
+    "bower": "^1.3.12",
     "browserify": "^8.0.3",
     "browserify-ngannotate": "^0.5.0",
     "gulp": "^3.8.10",
@@ -49,6 +50,7 @@
     "url": "https://github.com/theponti/devnotes.git"
   },
   "scripts": {
+    "bootstrap": "npm install && bower install",
     "build-prod": "gulp build-prod",
     "dev": "gulp dev",
     "test": "/node_modules/karma/bin/karma test/karma.conf.js",
