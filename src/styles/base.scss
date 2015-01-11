@@ -24,20 +24,41 @@ button {
 }
 
 blockquote {
+    display: block;
     background-color: antiquewhite;
-    padding: 1em;
+    padding: 18px;
     margin: 0;
     width: 100%;
-    line-height: 1.4em;
+    line-height: 24px;
+    position: relative;
 }
 
 cite {
-    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 pre {
     font-size: 0.9em
 }
-.content {
+
+mark {
+    background-color: antiquewhite;
+    padding: 0.1em 0.3em;
+    margin: 0 0.3em;
+}
+
+main {
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
     padding-top: 65px;
+}
+
+@media all and (min-width: $bp-tablet) {
+    main {
+        padding-top: 75px;
+        width: 90%;
+    }
 }
