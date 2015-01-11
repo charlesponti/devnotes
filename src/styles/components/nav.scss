@@ -1,6 +1,5 @@
 $tomato: rgba(255, 99, 71, 0.98);
 $dark-tomato: rgba(216, 84, 61, 0.98);
-$link-padding: 0.8em 1.5em;
 
 header nav {
     // Position <nav> absolutely to site
@@ -19,7 +18,7 @@ header nav {
             a {
                 // Make <a> display block to take padding
                 display: block;
-                padding: $link-padding;
+                padding: 16px 20px 10px;
                 // Remove underline
                 text-decoration: none;
                 // Change color
@@ -46,7 +45,7 @@ header nav {
         background-color: $tomato;
         color: white;
         max-height: 3em;
-        padding: $link-padding;
+        padding: 14px 27px;
         border: 0em;
         font-size: 1em;
         &:hover {
@@ -64,6 +63,9 @@ header nav {
 
 @media all and (min-width: $bp-tablet) {
     header nav {
+        position: fixed;
+        max-height: 55px;
+        overflow: hidden;
         // Make <nav> full width of page
         width: 100%;
         ul {
@@ -74,12 +76,12 @@ header nav {
                 display: inline-block;
                 a {
                     // Bump font-sizes
-                    font-size: 1.4em;
+                    font-size: 18px;
                     &.brand {
                         // Adjust padding on so .brand takes up same amout of
                         // space as regular links
-                        padding: 0.45em 1.2em 0.55em;
-                        font-size: 1.7em;
+                        padding: 13px 20px 10px;
+                        font-size: 20px;
                     }
                 }
             }
