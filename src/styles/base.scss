@@ -32,6 +32,8 @@
   box-sizing: border-box;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
 html, body {
     height: 100%;
     width: 100%;
@@ -39,11 +41,15 @@ html, body {
     padding: 0;
     background-color: $background;
     color: $font-color;
-    font-family: serif;
+    font-family: $lato;
 
     h1 {
         letter-spacing: 0.35rem;
     }
+}
+
+button {
+    font-family: $lato;
 }
 
 .content {
