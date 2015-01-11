@@ -1,4 +1,6 @@
-# SCMACSS (Scalable & Modular Architure For CSS)
+## SCMACSS
+
+### Scalable & Modular Architecture CSS
 
 SCMACSS is style guide based on a way of examining your design process and having a more flexible thought process surrounding how your sites styles are crafted. At the core this methodology is categorisation of CSS rules into five main types:
 
