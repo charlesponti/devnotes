@@ -1,7 +1,7 @@
 {
   "name": "devnotes",
   "description": "A collection of web development notes",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "CJ Ponti <cjponti@gmail.com>",
   "bugs": {
     "url": "https://github.com/theponti/devnotes/issues"
