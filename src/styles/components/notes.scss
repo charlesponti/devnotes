@@ -1,0 +1,30 @@
+.notes {
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        a {
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    
+    & > [ui-view] {
+        height: 100%;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    @media all and (min-width: 900px) {
+        nav.side {
+            float: left;
+            width: 30%;
+        }
+        [ui-view] {
+            float: right;
+            width: 70%;
+            padding-left: 20px;
+        }
+    }
+}
