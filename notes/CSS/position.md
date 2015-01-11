@@ -1,25 +1,33 @@
 ## Positioning
 
+The `position` property is used to position an element within its parent element.
+
 ### Static
 <prism language='css'>
   position: static;
 </prism>
 
-Static positioning is the default positioning value for HTML elements and causes the elements to static on.
+Static positioning is the default positioning value for HTML elements and causes
+the elements to static on.
 
 ### Relative
 <prism language='css'>
   position: relative;
 </prism>
 
-Relative positioned elements behave in the exact same way as staticly positioned elements, but this setting allows the element to be offset by top, right, bottom, and left properties. It also allows its children to position themselves relative to it.
+Relative positioned elements behave in the exact same way as statically positioned
+elements, but this setting allows the element to be offset by top, right, bottom,
+and left properties. It also allows its children to position themselves relative
+to it.
 
 ### Absolute
 <prism language='css'>
   position: absolute;
 </prism>
 
-An absolute positioned element is removed from the normal flow of the document and can be place anywhere on the DOM.
+An absolute positioned element is removed from the normal flow of the document
+and can be place anywhere within its closest ancestor whose position is set to
+`relative`.
 
 ### Fixed
 <prism language='css'>
