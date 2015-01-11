@@ -1,2 +1,8 @@
 .DS_Store
 .sass-cache
+.divshot-cache
+src/views/**
+templates.js
+node_modules
+public/*
+*.log

@@ -1,0 +1,61 @@
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+.notes [ui-view] {
+    padding-top: 2em;
+    // height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
+}
+
+@media all and (min-width: $bp-tablet) {
+    .notes [ui-view] {
+        padding-top: 6em;
+        width: 75%;
+    }
+}
+
+@mixin transform($val) {
+    -webkit-transform: scale3d(0.5, 0.5, 0.5);
+    -moz-transform:    scale3d(0.5, 0.5, 0.5);
+    transform:         scale3d(0.5, 0.5, 0.5);
+}
+
+.notes [ui-view].ng-enter,
+.notes [ui-view].ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 3.5s ease-in-out;
+    -moz-transition:    all 3.5s ease-in-out;
+    -o-transition:      all 3.5s ease-in-out;
+    transition:         all 3.5s ease-in-out;
+}
+
+.notes [ui-view].ng-enter {
+    height: 0em;
+    // -webkit-transform:scale3d(0.5, 0.5, 0.5);
+    // -moz-transform:scale3d(0.5, 0.5, 0.5);
+    // transform:scale3d(0.5, 0.5, 0.5);
+}
+
+.notes [ui-view].ng-enter-active {
+    height: 10em;
+    // -webkit-transform:scale3d(1, 1, 1);
+    // -moz-transform:scale3d(1, 1, 1);
+    // transform:scale3d(1, 1, 1);
+}
+
+.notes [ui-view].ng-leave {
+    height: 10em;
+    // -webkit-transform:translate3d(0, 0, 0);
+    // -moz-transform:translate3d(0, 0, 0);
+    // transform:translate3d(0, 0, 0);
+}
+
+.notes [ui-view].ng-leave-active {
+    height: 0em;
+    // -webkit-transform:translate3d(100px, 0, 0);
+    // -moz-transform:translate3d(100px, 0, 0);
+    // transform:translate3d(100px, 0, 0);
+}

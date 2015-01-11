@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+    color: $font-color;
+    font-family: $lato;
+    box-sizing: border-box;
+    h1 {
+        letter-spacing: 0.35rem;
+    }
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+button {
+    font-family: $lato;
+}
+
+blockquote {
+    background-color: antiquewhite;
+    padding: 1em;
+    margin: 0;
+    width: 100%;
+    line-height: 1.4em;
+}
+
+cite {
+    float: right;
+}
+
+pre {
+    font-size: 0.9em
+}
+.content {
+    padding-top: 65px;
+}

@@ -12,16 +12,16 @@ SCMACSS is style guide based on a way of examining your design process and havin
 
 ### Base Rules
 
-```css
-html, body {
-  margin: 0;
-  padding: 0;
-}
+<prism language='css'>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
 
-a {
-  color: #039;
-}
-```
+  a {
+    color: #039;
+  }
+</prism>
 
 Base rules are the defaults for single element, attribute, pseudo-class, child, or sibling selectors. Essentially, a base rule dictates that wherever that element is, it will look like *this*.
 
@@ -43,26 +43,26 @@ Theme rules describe how modules or layout will look.
 
 ## Naming Rules
 
-```css
-/* Example Module */
-.example {
+<prism language='css'>
+  /* Example Module */
+  .example {
 
-}
+  }
 
-/* Caption element within Example Module */
-.example-caption {
+  /* Caption element within Example Module */
+  .example-caption {
 
-}
+  }
 
-/* Example Module in hidden state */
-.example.is-hidden {
+  /* Example Module in hidden state */
+  .example.is-hidden {
 
-}
+  }
 
-/* Inline layout */
-.l-inline {
+  /* Inline layout */
+  .l-inline {
 
-}
-```
+  }
+</prism>
 
 Having a naming convention is beneficial for understanding what a particular style belongs to and its role within the overall scope of the site's design.
