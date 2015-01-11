@@ -1,13 +1,9 @@
 'use strict';
 
-window.$ =
-window.jQuery = require('jquery');
-
 // Require Angular and dependencies
 require('angular');
 require('angular-animate');
 require('angular-ui-router');
-
 
 // Require templates
 require('./templates');
