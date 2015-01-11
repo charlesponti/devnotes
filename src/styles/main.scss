@@ -1,13 +1,8 @@
-@import "colors",
-        "base",
-        "bootstrap-overrides";
+@import "variables",
+        "colors",
+        "base";
 
-// Components
-@import "nav",
-        "components/header",
-        "components/countdown";
-
-// Pages
-@import "pages/home",
-        "pages/whoami",
-        "pages/projects";
+@import "components/nav",
+        "components/nav-side",
+        "components/ui-view",
+        "components/list-group";
