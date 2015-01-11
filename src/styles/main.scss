@@ -1,14 +1,10 @@
 @import "variables",
         "colors",
-        "base";
+        "base",
+        "helpers";
 
-@import "components/nav",
+@import "components/notes",
+        "components/nav",
         "components/nav-side",
         "components/ui-view",
         "components/list-group";
-
-.highlight {
-    background-color: antiquewhite;
-    padding: 0.1em 0.3em;
-    margin: 0 0.3em;
-}
