@@ -9,31 +9,29 @@ In OO-CSS, an "object" is a repeating visual pattern that can be abstracting int
 ### Seperate Structure & Skin
 
 **BAD**
-```css
-img {
+<prism language='css'>
+  img {
 
-}
-```
+  }
+</prism>
 
 **GOOD**
-```html
-<img class="image" />
-```
+<prism language='html'>
+  <img class="image" />
+</prism>
 
 This principle means using classes to name objects as opposed to relying on HTML semantics. The "skin" represents the repeatitive visual styles that will be used on those objects and the "structure" is the HTML element that the skin is used on.
 
 ### Seperate Container & Content
 
-**BAD**
-```css
-.object h2 {
+<prism language='css'>
+  .object h2 {
 
-}
-```
+  }
+</prism>
 
-**GOOD**
-```html
-<h2 class="category"></h2>
-```
+<!-- <prism language='html'>
+  <h2 class="category"></h2>
+</prism> -->
 
 This principle means that an object should look the same no matter where it is used.
