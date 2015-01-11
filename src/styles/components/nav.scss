@@ -1,0 +1,92 @@
+$tomato: rgba(255, 99, 71, 0.98);
+$dark-tomato: rgba(216, 84, 61, 0.98);
+$link-padding: 0.8em 1.5em;
+
+header nav {
+    // Position <nav> absolutely to site
+    position: absolute; top: 0; right: 0;
+    // Prevent <nav> from growing in width when <ul> is off-canvas
+    overflow: hidden;
+    width: 11em;
+    ul {
+        margin: 3.7em 0 0 11em;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        background-color: $tomato;
+        li {
+            a {
+                // Make <a> display block to take padding
+                display: block;
+                padding: $link-padding;
+                // Remove underline
+                text-decoration: none;
+                // Change color
+                color: white;
+                font-weight: 600;
+                line-height: 1.2em;
+                &.brand {
+                    font-size: 1.2em;
+                    padding-left: 1.2em;
+                }
+                &:hover {
+                    background-color: $dark-tomato;
+                }
+            }
+        }
+        &.open {
+            margin-left: 0em;
+        }
+    }
+    button {
+        position: absolute; top: 0.5em; right: 0em;
+        display: block;
+        cursor: pointer;
+        background-color: $tomato;
+        color: white;
+        max-height: 3em;
+        padding: $link-padding;
+        border: 0em;
+        font-size: 1em;
+        &:hover {
+            background-color: $dark-tomato;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    button:active + ul {
+        margin-left: 0em;
+    }
+}
+
+
+@media all and (min-width: $bp-tablet) {
+    header nav {
+        // Make <nav> full width of page
+        width: 100%;
+        ul {
+            // Kill margin
+            margin: 0;
+            li {
+                // Align <li> items
+                display: inline-block;
+                a {
+                    // Bump font-sizes
+                    font-size: 1.4em;
+                    &.brand {
+                        // Adjust padding on so .brand takes up same amout of
+                        // space as regular links
+                        padding: 0.45em 1.2em 0.55em;
+                        font-size: 1.7em;
+                    }
+                }
+            }
+        }
+        // Hide <button>
+        button {
+            display: none;
+        }
+    }
+}
