@@ -13,7 +13,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "highlight": "~7.0.1"
-  }
+  "dependencies": {}
 }
