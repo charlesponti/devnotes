@@ -65,6 +65,8 @@ main {
     color: black;
     cursor: pointer;
     text-decoration: none; }
+.notes p {
+  text-align: justify; }
 .notes > [ui-view] {
   height: 100%;
   width: 95%;
