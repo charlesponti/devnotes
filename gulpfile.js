@@ -62,6 +62,7 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
   return gulp.src('./src/styles/main.scss')
     .pipe($.sass())
+    .pipe($.if(global.isProd, $.concat('main.css')))
     .pipe(gulp.dest('public/styles'));
 });
 
@@ -99,6 +100,11 @@ gulp.task('server', function(next) {
 
 gulp.task('build', function() {
   return runSequence('styles','markdown','views','scripts');
+});
+
+gulp.task('build-prod', function() {
+  global.isProd = true;
+  return runSequence('build');
 });
 
 gulp.task('dev', function() {

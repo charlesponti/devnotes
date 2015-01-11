@@ -51,6 +51,7 @@
     "url": "https://github.com/theponti/devnotes.git"
   },
   "scripts": {
+    "build-prod": "gulp build-prod",
     "dev": "gulp dev",
     "test": "/node_modules/karma/bin/karma test/karma.conf.js",
     "views": "gulp markdown && gulp views"
