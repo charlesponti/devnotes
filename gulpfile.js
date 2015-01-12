@@ -8,14 +8,12 @@ global.isProd = false;
 
 var fs = require('fs');
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-
 var browserify = require('browserify');
-var ngannotate = require('browserify-ngannotate');
-var source = require('vinyl-source-stream');
-
+var $ = require('gulp-load-plugins')();
 var superstatic = require('superstatic');
 var runSequence = require('run-sequence');
+var source = require('vinyl-source-stream');
+var ngannotate = require('browserify-ngannotate');
 
 /**
  * @desc Convert notes from markdown to HTML
@@ -96,7 +94,7 @@ gulp.task('server', function(next) {
 });
 
 gulp.task('build', function() {
-  return runSequence('styles','markdown','views','scripts');
+  return runSequence('styles', 'markdown', 'views', 'scripts');
 });
 
 gulp.task('build-prod', function() {
