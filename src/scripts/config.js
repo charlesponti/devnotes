@@ -9,11 +9,14 @@ module.exports = function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
 
-  // Add CSS routes
+  // Add CSS states
   states.css($stateProvider);
 
-  // Add Ruby routes
+  // Add Ruby states
   states.ruby($stateProvider);
+
+  // Add HTML states
+  states.html($stateProvider);
 
   $stateProvider
     .state('home', {
