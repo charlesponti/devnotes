@@ -20,7 +20,7 @@
     "gulp-if": "^1.2.5",
     "gulp-jshint": "^1.9.0",
     "gulp-load-plugins": "^0.8.0",
-    "gulp-markdown": "^1.0.0",
+    "gulp-marked": "^1.0.0",
     "gulp-sass": "^1.2.4",
     "gulp-streamify": "0.0.5",
     "gulp-uglify": "^1.0.2",
