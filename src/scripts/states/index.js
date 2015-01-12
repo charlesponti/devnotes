@@ -2,5 +2,6 @@
 
 module.exports = {
   css: require('./css'),
-  ruby: require('./ruby')
+  ruby: require('./ruby'),
+  html: require('./html')
 };
