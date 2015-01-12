@@ -150,73 +150,45 @@ header nav {
       display: none; }
  }
 
-nav.side {
-  width: 95%;
+x-list-group {
+  font-size: 2em;
   margin: 0 auto;
-  background-color: tomato; }
-  nav.side button {
-    color: white;
-    background-color: tomato;
-    border: 0em;
-    width: 100%;
-    font-size: 1em;
-    padding: 1em 1.5em;
-    display: block;
-    text-align: center; }
-  nav.side ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s; }
-    nav.side ul li a {
-      display: block;
-      text-align: center;
-      color: white;
-      padding: 1em 1.5em;
-      cursor: pointer; }
-  nav.side ul.open {
-    max-height: 16em; }
-
-/* Have to set height explicity on ui-view
-to prevent collapsing during animation*/
-[ui-view] {
-  transition: all 1s ease-in-out; }
-
-[ui-view].ng-enter, [ui-view].ng-leave {
-  -webkit-transition: all 1.5s ease-in-out;
-  -moz-transition: all 1.5s ease-in-out;
-  -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out; }
-
-[ui-view].ng-enter {
-  opacity: 0; }
-
-[ui-view].ng-enter-active {
-  opacity: 1; }
-
-[ui-view].ng-leave {
-  opacity: 1; }
-
-[ui-view].ng-leave-active {
-  opacity: 0; }
-
-.notes x-list-group {
-  width: 11em;
   max-width: 11em;
-  margin: 0 auto;
   text-align: center;
-  font-size: 2em; }
-  .notes x-list-group ul {
+  width: 11em; }
+  x-list-group ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .notes x-list-group x-list-item li a {
+  x-list-group li a {
+    color: rgba(255, 99, 71, 0.98);
     display: block;
-    padding: 1em 1.5em;
-    color: tomato; }
-    .notes x-list-group x-list-item li a:hover {
-      background-color: tomato;
-      color: white;
-      text-decoration: none; }
+    padding: 1em 1.5em; }
+
+[ui-view] {
+  transition: all 1s ease-in-out; }
+  [ui-view].ng-enter, [ui-view].ng-leave {
+    transition: all 1.5s ease-in-out; }
+  [ui-view].ng-leave {
+    opacity: 1; }
+  [ui-view].ng-enter {
+    opacity: 0; }
+  [ui-view].ng-enter-active {
+    opacity: 1; }
+  [ui-view].ng-leave-active {
+    opacity: 0; }
+
+x-list-group {
+  font-size: 2em;
+  margin: 0 auto;
+  max-width: 11em;
+  text-align: center;
+  width: 11em; }
+  x-list-group ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  x-list-group li a {
+    color: rgba(255, 99, 71, 0.98);
+    display: block;
+    padding: 1em 1.5em; }

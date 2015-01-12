@@ -58,6 +58,7 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
   return gulp.src('./src/styles/main.scss')
     .pipe($.sass())
+    .pipe($.autoprefixer())
     .pipe($.if(global.isProd, $.concat('main.css')))
     .pipe(gulp.dest('public/styles'));
 });
