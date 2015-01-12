@@ -1,10 +1,9 @@
-@import "variables",
-        "colors",
-        "base",
-        "helpers";
+@import 'variables';
+@import 'base';
+@import 'helpers';
 
-@import "components/notes",
-        "components/nav",
-        "components/nav-side",
-        "components/ui-view",
-        "components/list-group";
+@import 'components/notes';
+@import 'components/nav';
+@import 'components/nav-side';
+@import 'components/ui-view';
+@import 'components/list-group';

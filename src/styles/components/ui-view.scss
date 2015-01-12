@@ -1,29 +1,25 @@
-/* Have to set height explicity on ui-view
-to prevent collapsing during animation*/
 [ui-view] {
-    transition: all 1s ease-in-out;
-}
+  transition: all 1s ease-in-out;
 
-[ui-view].ng-enter,
-[ui-view].ng-leave {
-    -webkit-transition:all 1.5s ease-in-out;
-    -moz-transition:all 1.5s ease-in-out;
-    -o-transition:all 1.5s ease-in-out;
-    transition:all 1.5s ease-in-out;
-}
+  &.ng-enter,
+  &.ng-leave {
+    transition: all 1.5s ease-in-out;
+  }
 
-[ui-view].ng-enter {
-    opacity: 0;
-}
-
-[ui-view].ng-enter-active {
+  &.ng-leave {
     opacity: 1;
-}
+  }
 
-[ui-view].ng-leave {
-    opacity: 1;
-}
-
-[ui-view].ng-leave-active {
+  &.ng-enter {
     opacity: 0;
+  }
+
+  &.ng-enter-active {
+    opacity: 1;
+  }
+
+  &.ng-leave-active {
+    opacity: 0;
+  }
+
 }

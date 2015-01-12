@@ -1,40 +1,17 @@
-$padding: 1em 1.5em;
-
-nav.side {
-    width: 95%;
-    margin: 0 auto;
-    background-color: tomato;
-
-    button {
-        color: white;
-        background-color: tomato;
-        border: 0em;
-        width: 100%;
-        font-size: 1em;
-        padding: $padding;
-        display: block;
-        text-align: center;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s;
-        li {
-            a {
-                display: block;
-                text-align: center;
-                color: white;
-                padding: $padding;
-                cursor: pointer;
-            }
-        }
-    }
-
-    ul.open {
-        max-height: 16em;
-    }
+x-list-group {
+  font-size: 2em;
+  margin: 0 auto;
+  max-width: 11em;
+  text-align: center;
+  width: 11em;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    color: $tomato;
+    display: block;
+    padding: 1em 1.5em;
+  }
 }

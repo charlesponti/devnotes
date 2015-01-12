@@ -1,31 +1,19 @@
-.notes {
-    x-list-group {
-        // display: inline-block;
-        width: 11em;
-        max-width: 11em;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 2em;
+x-list-group {
+  font-size: 2em;
+  margin: 0 auto;
+  max-width: 11em;
+  text-align: center;
+  width: 11em;
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-        x-list-item {
-            li {
-                a {
-                    display: block;
-                    padding: 1em 1.5em;
-                    color: tomato;
-                    &:hover {
-                        background-color: tomato;
-                        color: white;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
+  li a {
+    color: $tomato;
+    display: block;
+    padding: 1em 1.5em;
+  }
 }
