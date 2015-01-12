@@ -2,7 +2,7 @@
 
 ![Class Tree](/public/images/ruby/class_tree.jpg)
 
-<prism language='ruby'>
+```ruby
 	class Car
 		attr_accessor :make
 
@@ -27,7 +27,7 @@
 			# Code to open doors
 		end
 	end
-</prism>
+```
 
 In object-oriented programming languages, structuring your application involves
 the use of classes and objects to encapsulate related code into reusable and
@@ -38,24 +38,24 @@ Classes are used to hold related values and methods that you will want to reuse
 all together. For instance, using the above Car class, you can define new cars
 like so:
 
-<prism language='ruby'>
+```ruby
 	irb(main)> bmw = Car.new('BMW')
 	irb(main)> bmw.make
 	=> 'BMW'
-</prism>
+```
 
 Now, you will have a new instance of the Car class whose make value is set to
 `'BMW'`.
 
 ## Initialize
 
-<prism language='ruby'>
+```ruby
 	def initialize(name, age, gender)
 		@name = name
 		@age = age
 		@gender = gender
 	end
-</prism>
+```
 
 The `initialize` method of class is executed when a new instance of the class
 is created. The parameters of this method, when coupled with variable
@@ -64,24 +64,24 @@ definitions as seen above, will set those values of the new class instance.
 Utilizing the initialize function allows you to create the ``bmw`` instance
 that was created above like so:
 
-<prism language='ruby'>
+```ruby
 	bmw = Car.new('BMW')
-</prism>
+```
 
 Another thing you can do with classes is create a new class that extends from
 it, like so:
 
-<prism language='ruby'>
+```ruby
 	class BMW < Car
 		attr_accessor :model, :year, :horsepower, :num_of_doors
 	end
-</prism>
+```
 
 Now, you will have a new class from which you can create new instances.
 
-<prism language='ruby'>
+```ruby
 	m_three = BMW.new('M3', 2014, 500, 2)
-</prism>
+```
 
 Executing the above code with assign to the variable ``m_three`` an instance of
 the BMW class with its ``model`` set to ``'M3'``, its ``year`` set to ``2014``,

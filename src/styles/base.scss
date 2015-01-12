@@ -1,64 +1,73 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: $background;
-    color: $font-color;
-    font-family: $lato;
-    box-sizing: border-box;
-    h1 {
-        letter-spacing: 0.35rem;
-    }
+html,
+body {
+  background-color: $background;
+  box-sizing: border-box;
+  color: $font-color;
+  font-family: $lato;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  h1 {
+    letter-spacing: .35rem;
+  }
 }
 
-/* apply a natural box layout model to all elements */
-*, *:before, *:after {
-    box-sizing: inherit;
+// apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 button {
-    font-family: $lato;
+  font-family: $lato;
 }
 
 blockquote {
-    display: block;
-    background-color: antiquewhite;
-    padding: 18px;
-    margin: 0;
-    width: 100%;
-    line-height: 24px;
-    position: relative;
+  background-color: $antique;
+  display: block;
+  line-height: 24px;
+  margin: 0;
+  padding: 18px;
+  position: relative;
+  width: 100%;
 }
 
 cite {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+  bottom: 5px;
+  position: absolute;
+  right: 5px;
 }
 
-pre {
-    font-size: 1.1em;
+pre > .hljs {
+  display: block;
+  font-size: 1.1em;
+}
+
+.hljs {
+  display: inline;
 }
 
 mark {
-    background-color: antiquewhite;
-    padding: 0.1em 0.3em;
-    margin: 0 0.3em;
+  background-color: $antique;
+  margin: 0 .3em;
+  padding: .1em .3em;
 }
 
 main {
-    height: 100%;
-    width: 95%;
-    margin: 0 auto;
-    padding-top: 65px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 65px;
+  width: 95%;
 }
 
 @media all and (min-width: $bp-tablet) {
-    main {
-        padding-top: 75px;
-        width: 90%;
-    }
+  main {
+    padding-top: 75px;
+    width: 90%;
+  }
 }

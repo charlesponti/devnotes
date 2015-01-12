@@ -1,17 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   background-color: white;
+  box-sizing: border-box;
   color: black;
   font-family: "Lato", sans-serif;
-  box-sizing: border-box; }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
   html h1, body h1 {
     letter-spacing: 0.35rem; }
 
-/* apply a natural box layout model to all elements */
 *, *:before, *:after {
   box-sizing: inherit; }
 
@@ -19,32 +18,36 @@ button {
   font-family: "Lato", sans-serif; }
 
 blockquote {
+  background-color: #faedb7;
   display: block;
-  background-color: antiquewhite;
-  padding: 18px;
-  margin: 0;
-  width: 100%;
   line-height: 24px;
-  position: relative; }
+  margin: 0;
+  padding: 18px;
+  position: relative;
+  width: 100%; }
 
 cite {
-  position: absolute;
   bottom: 5px;
+  position: absolute;
   right: 5px; }
 
-pre {
+pre > .hljs {
+  display: block;
   font-size: 1.1em; }
 
+.hljs {
+  display: inline; }
+
 mark {
-  background-color: antiquewhite;
-  padding: 0.1em 0.3em;
-  margin: 0 0.3em; }
+  background-color: #faedb7;
+  margin: 0 0.3em;
+  padding: 0.1em 0.3em; }
 
 main {
   height: 100%;
-  width: 95%;
   margin: 0 auto;
-  padding-top: 65px; }
+  padding-top: 65px;
+  width: 95%; }
 
 @media all and (min-width: 768px) {
   main {
