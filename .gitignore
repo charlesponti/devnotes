@@ -3,5 +3,4 @@
 src/views/**
 templates.js
 node_modules
-bower_components
 *.log
