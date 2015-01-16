@@ -14,6 +14,10 @@ module.exports = function(stateProvider) {
       url: '/box-model',
       templateUrl: 'notes/css/box-model.html'
     })
+    .state('css.flexbox', {
+      url: '/flexbox',
+      templateUrl: 'notes/css/flexbox.html'
+    })
     .state('css.smacss', {
       url: '/smacss',
       templateUrl: 'notes/css/smacss.html',
