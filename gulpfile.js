@@ -68,7 +68,6 @@ gulp.task('css', function() {
   }))
   .pipe($.autoprefixer())
   .pipe($.if(global.isProd, $.csso()))
-  .pipe($.if(global.isProd, $.rename('main.min.css')))
   .pipe(gulp.dest('dist/css'))
   .pipe($.size({title: 'CSS'}));
 });

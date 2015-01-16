@@ -57,7 +57,7 @@
   "scripts": {
     "bootstrap": "npm install && bower install",
     "build": "gulp build",
-    "build:prod": "gulp build-prod",
+    "build:prod": "gulp build:prod",
     "start": "gulp build && gulp serve",
     "test": "/node_modules/karma/bin/karma test/karma.conf.js",
     "views": "gulp markdown && gulp views"
