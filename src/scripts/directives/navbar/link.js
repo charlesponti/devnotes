@@ -9,7 +9,7 @@ module.exports = function(scope, element, attrs) {
   var toggle = element.find('button');
 
   function toggleList() {
-      return list.toggleClass('open');
+    return list.toggleClass('open');
   }
 
   // Toggle 'open' class when mouse leaves <nav>
