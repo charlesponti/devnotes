@@ -13,7 +13,7 @@ module.exports = function($templateCache) {
 
     transclude: true,
 
-    template: $templateCache.get('components/nav-side.html'),
+    template: '<nav class="side" ng-transclude></nav>',
 
     link: require('./link'),
 
