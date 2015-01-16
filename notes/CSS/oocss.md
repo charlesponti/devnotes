@@ -9,7 +9,7 @@ possibly JavaScript if necessary. An example would be the Google card design
 used in Google Now, tweets on Twitter, or posts on Facebook. Each have a distinct
 style that is repeated and recognisable. There may be slight variations in size
 based on content, but the majority of the styles remain the same. If each Google
-card had a `.card` class that represented that "object", a developer could use
+card had a `.card` class that represented that **object**, a developer could use
 the `.card` class on another element with the confidence of knowing how that
 element is going to look and behaviour at different screen sizes, resolutions, etc.
 
@@ -29,9 +29,10 @@ element is going to look and behaviour at different screen sizes, resolutions, e
   <img class="image" />
 ```
 
-This principle means using classes to name objects as opposed to relying on HTML
-semantics. The "skin" represents the repetitive visual styles that will be used
-on those objects and the "structure" is the HTML element that the skin is used
+**Use classes instead of relying on HTML semantics**
+
+The **skin** represents the repetitive visual styles that will be used
+on those objects and the **structure** is the HTML element that the skin is used
 on.
 
 ### Separate Container & Content
@@ -46,4 +47,4 @@ on.
   <h2 class="category"></h2>
 ```
 
-This principle means that an object should look the same no matter where it is used.
+**An object should look the same no matter where it is used.**
