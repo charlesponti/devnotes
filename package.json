@@ -58,6 +58,7 @@
     "bootstrap": "npm install && bower install",
     "build": "gulp build",
     "build:prod": "gulp build:prod",
+    "deploy": "git checkout gh-pages && git merge master && gulp build:prod && git ca -'Update build' && git push origin gh-pages",
     "start": "gulp build && gulp serve",
     "test": "/node_modules/karma/bin/karma test/karma.conf.js",
     "views": "gulp markdown && gulp views"
