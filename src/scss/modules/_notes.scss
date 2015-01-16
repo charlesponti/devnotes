@@ -20,7 +20,7 @@
         margin: 0 auto;
     }
 
-    @media all and (min-width: 900px) {
+    @media all and (min-width: $bp-large) {
         nav.side {
             float: left;
             width: 30%;

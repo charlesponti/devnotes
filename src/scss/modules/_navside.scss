@@ -1,0 +1,33 @@
+nav.side {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 16px;
+  border-top: 1px solid $tomato;
+  border-bottom: 1px solid $tomato;
+
+  h4 {
+    color: $tomato;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  li a {
+    color: $tomato;
+  }
+
+  @media all and (min-width: $bp-large) {
+    max-width: 30%;
+  }
+
+}
