@@ -3,27 +3,26 @@
 ### Block-Element-Modifier
 
 ```css
+  .button {
 
-.button {
+  }
 
-}
+  .button_link {
 
-.button_link {
+  }
 
-}
+  .button_link--is-pressed {
 
-.button_link--is-pressed {
-
-}
-
+  }
 ```
 
-BEM, or Block-Element-Modifier, is a methodology for constructing the styles for
-a website's or web application's styles. This approach is meant to "ensure that
-everyone participating in the development of a website is working with the same
-codebase and using the same terminology". The idea was crafted by members of the
-web development community who noticed that we had a broken system of crafting
-websites whereby:
+BEM, or Block-Element-Modifier, is a methodology for constructing a web site's
+styles. This approach is meant to "ensure that everyone participating in the
+development of a website is working with the same codebase and using the same
+terminology".
+
+The idea was crafted by members of the web development community
+who noticed that we had a broken system of crafting websites whereby:
 
 1. Designer designs in Photoshop
 2. Front-end developer constructs HTML & CSS
