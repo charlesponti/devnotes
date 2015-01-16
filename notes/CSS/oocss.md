@@ -37,12 +37,14 @@ on.
 
 ### Separate Container & Content
 
+**BAD**
 ```css
   .object h2 {
 
   }
 ```
 
+**GOOD**
 ```html
   <h2 class="category"></h2>
 ```
