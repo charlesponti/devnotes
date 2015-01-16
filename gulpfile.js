@@ -10,7 +10,8 @@ var fs = require('fs');
 var gulp = require('gulp');
 var browserify = require('browserify');
 var $ = require('gulp-load-plugins')();
-var superstatic = require('superstatic');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var source = require('vinyl-source-stream');
 var ngannotate = require('browserify-ngannotate');
@@ -20,10 +21,13 @@ var ngannotate = require('browserify-ngannotate');
  */
 gulp.task('markdown', function() {
   return gulp.src(['notes/**/*.md'])
-    .pipe($.marked({}))
+    .pipe($.marked())
     .pipe(gulp.dest('src/views/notes'));
 });
 
+/**
+ * @desc Add views files to Angular templateCache
+ */
 gulp.task('views', function() {
   return gulp.src(['src/views/**/*.html'])
     .pipe($.angularTemplatecache({
@@ -36,7 +40,7 @@ gulp.task('views', function() {
 /**
  * @desc Create browserify bundle
  */
-gulp.task('scripts', function() {
+gulp.task('js', function() {
   return browserify({
       entries: ['./src/scripts/main.js'],
       debug: global.isProd ? false : true,
@@ -47,61 +51,64 @@ gulp.task('scripts', function() {
     .bundle()
     .pipe(source('main.js'))
     .pipe($.if(global.isProd, $.streamify($.uglify)))
-    .pipe(gulp.dest('public/scripts'));
+    .pipe(gulp.dest('dist/js'));
 });
 
 /**
  * @desc Styles task
  */
-gulp.task('styles', function() {
-  return gulp.src('./src/styles/main.scss')
-    .pipe($.sass())
-    .pipe($.autoprefixer())
-    .pipe($.if(global.isProd, $.concat('main.css')))
-    .pipe(gulp.dest('public/styles'));
+gulp.task('css', function() {
+  return gulp.src(['./src/scss/main.scss'])
+  .pipe($.sass({
+    sourceComments: global.isProd ? 'none' : 'map',
+    sourceMap: 'sass',
+    outputStyle: global.isProd ? 'compressed' : 'nested',
+    precision: 10,
+    onError: console.error.bind(console, 'Sass error:')
+  }))
+  .pipe($.autoprefixer())
+  .pipe($.if(global.isProd, $.csso()))
+  .pipe($.if(global.isProd, $.rename('main.min.css')))
+  .pipe(gulp.dest('dist/css'))
+  .pipe($.size({title: 'CSS'}));
 });
 
-/**
- * @desc Watch task
- */
-gulp.task('watch', function() {
-  gulp.watch('notes/**/*.md', ['markdown']);
-  gulp.watch('src/views/**/*.html', ['views']);
-  gulp.watch('src/styles/**/*.scss', ['styles']);
-  return gulp.watch('src/scripts/**/*.js', ['scripts']);
+// Optimize Images
+gulp.task('images', function() {
+  return gulp.src(['src/images/**/*'])
+  .pipe($.imagemin({
+    progressive: true,
+    interlaced: true
+  }))
+  .pipe(gulp.dest('dist/images'))
+  .pipe($.size({title: 'images'}));
 });
 
 /**
  * @desc Task to start development server
  */
-gulp.task('server', function(next) {
-  var server = superstatic({
-    logger: {
-      info: function(msg) {
-        console.log('Info:', msg);
-      },
-      error: function(msg) {
-        console.error('Error:', msg);
-      }
-    },
-    port: 3000,
-    config: 'divshot.json'
+gulp.task('serve', function() {
+  browserSync({
+    notify: false,
+    logPrefix: 'Facade',
+    server: '.'
   });
-  server.listen(function() {
-    console.log('Server running on port ' + server.port);
-  });
-  return next();
+
+  gulp.watch('notes/**/*.md', ['markdown', reload]);
+  gulp.watch('src/views/**/*.html', ['views' , reload]);
+  gulp.watch('src/scss/**/*.scss', ['css' , reload]);
+  gulp.watch('src/scripts/**/*.js', ['js', reload]);
 });
 
 gulp.task('build', function() {
-  return runSequence('styles', 'markdown', 'views', 'scripts');
+  return runSequence('css', 'markdown', 'views', 'js');
 });
 
-gulp.task('build-prod', function() {
+gulp.task('build:prod', function() {
   global.isProd = true;
   return runSequence('build');
 });
 
 gulp.task('dev', function() {
-  return runSequence('build', 'watch', 'server');
+  return runSequence('build', 'serve');
 });
