@@ -54,24 +54,6 @@ mark {
   padding: .1em .3em;
 }
 
-main {
-  height: auto;
-  margin: 0 auto;
-  padding: 65px 0;
-  width: 95%;
-  transition: transform .3s linear;
-
-  &.open {
-      transform: translate(-250px, 0);
-  }
-
-  @media all and (min-width: $bp-tablet) {
-      padding: 75px 0;
-      width: 90%;
-  }
-}
-
-
 .hide {
   display: none;
 }
