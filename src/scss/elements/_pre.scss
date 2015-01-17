@@ -1,0 +1,14 @@
+/**
+ * <pre>
+ * @group elements
+ */
+pre {
+    & > .hljs {
+        display: block;
+        font-size: 1.1em;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+        font-size: 10px;
+    }
+}
