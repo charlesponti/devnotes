@@ -11,11 +11,13 @@
   function closeMenu() {
     header.classList.remove('open');
     notesNav.classList.remove('open');
+    main.classList.remove('open');
   }
 
   function toggleMenu() {
     header.classList.toggle('open');
     notesNav.classList.toggle('open');
+    main.classList.toggle('open');
   }
 
   notesBtn.addEventListener('click', toggleMenu);
