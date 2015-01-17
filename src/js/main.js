@@ -1,8 +1,10 @@
 'use strict';
 
+// Require navigation controls
+require('./components/nav');
+
 // Require Angular and dependencies
 require('angular');
-require('angular-animate');
 require('angular-ui-router');
 
 // Require templates
@@ -13,7 +15,6 @@ require('./directives');
 
 // Declare 'devnotes' module
 angular.module('devnotes', [
-  'ngAnimate',
   'ui.router',
   'devnotes.notes',
   'devnotes.directives'
