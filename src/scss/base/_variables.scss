@@ -1,12 +1,47 @@
-// Fonts
-$lato: "Lato", sans-serif;
 
 // Colors
-$background: rgba(255, 255, 255, 1);
-$font-color: rgba(0, 0, 0, 1);
-$antique: #faedb7;
-$tomato: #ff6347;
+$color-night-shade: #2C3E50;
+$color-concrete: #95A5A6;
+
+// Font sizes
+$font-small: 13px !default;
+$font-base: 16px  !default;
+$font-medium: 20px !default;
+$font-large: 26px !default;
+$font-xl: 42px !default;
+$font-xxl: 68px !default;
+$font-xxxl: 110px !default;
+
+// Line height
+$line-height: 26px !default;
+
+// Font family
+$font-default: 'lato', Helvetica, Arial, sans-serif !default;
+$font-icon: 'icons' !default;
+$font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 // Breakpoints
-$bp-tablet: 768px;
-$bp-large: 900px;
+$bp-tablet: 768px !default;
+$bp-mobile: 480px !default;
+$bp-medium: 620px !default;
+$bp-large: 800px !default;
+$bp-xlarge: 1600px !default;
+$retina-resolution: 192dpi;
+
+// Animation easings
+$animation-easing: cubic-bezier(.455, .030, .515, .955) !default;
+
+// Header
+$header-background: $color-night-shade;
+$header-font-color: $color-concrete;
+
+// Nav Drawer
+$navdrawer-background: $color-night-shade;
+$navdrawer-font-color: $color-concrete;
+$navdrawer-link-transition: background-color 0.2s ease-out;
+$navdrawer-transition: transform 250ms ease-out;
+$navdrawer-width: 280px !default;
+
+// Header & Nav
+$header-nav-max-width: 865px;
+$header-nav-padding: 3%;
