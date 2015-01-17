@@ -29,7 +29,7 @@ module.exports = function($stateProvider, $urlRouterProvider) {
     })
     .state('tools', {
       url: '/tools',
-      templateUrl: 'tools.html'
+      templateUrl: 'notes/tools.html'
     });
 
 };
