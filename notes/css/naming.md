@@ -1,4 +1,4 @@
-# Naming
+## Naming
 
 The key to properly choosing class names is to be as meaningful, flexible, and
 reusable as possible. A developer should be able to look at a class name and
