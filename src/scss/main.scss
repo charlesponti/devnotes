@@ -3,6 +3,9 @@
 @import 'base/variables';
 @import 'base/elements';
 
+// Import elements
+@import 'elements/main';
+
 // Import layout
 @import 'layout/columns';
 @import 'layout/container';
