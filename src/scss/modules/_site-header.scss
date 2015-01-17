@@ -4,12 +4,14 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
 .site-header {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 50px;
     background-color: $tomato;
     font-size: 18px;
     line-height: 40px;
     transition: all .3s linear;
+    width: 100%;
+    z-index: 100;
 
     ul {
       list-style-type: none;
@@ -66,11 +68,6 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
     }
 
     @media all and (min-width: $bp-tablet) {
-        position: fixed;
-        max-height: 55px;
-        overflow: hidden;
-        // Make <nav> full width of page
-        width: 100%;
         ul {
           // Kill margin
           margin: 0;
