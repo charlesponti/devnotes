@@ -15,7 +15,7 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
 
     ul {
       list-style-type: none;
-      margin: 3.7em 0 0 11em;
+      margin: 59.2px 0 0 176px;
       padding: 0;
       transition: all 0.5s ease-in-out;
       width: 100%;
@@ -30,10 +30,10 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
         // Change color
         color: white;
         font-weight: 600;
-        line-height: 1.2em;
+        line-height: 19px;
         &.brand {
-            font-size: 1.2em;
-            padding-left: 1.2em;
+            font-size: 19;
+            padding-left: 19px;
         }
         &:hover {
             background-color: $dark-tomato;
@@ -52,10 +52,10 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
         cursor: pointer;
         background-color: $tomato;
         color: white;
-        max-height: 3em;
+        max-height: 50px;
         padding: 14px 27px;
-        border: 0em;
-        font-size: 1em;
+        border: 0px;
+        font-size: 16px;
         &:hover {
             background-color: $dark-tomato;
         }
@@ -63,7 +63,7 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
             outline: none;
         }
         &:active + ul {
-          margin-left: 0em;
+          margin-left: 0px;
         }
     }
 
