@@ -9,7 +9,10 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.html, *.scss]
+[*.html]
+indent_size = 4
+
+[*.scss]
 indent_size = 4
 
 [*.md]
