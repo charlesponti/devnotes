@@ -1,9 +1,14 @@
+// Import base
+@import 'base/colors';
 @import 'base/variables';
 @import 'base/elements';
 
-@import 'modules/list-group';
-@import 'modules/navside';
+// Import layout
+@import 'layout/columns';
+@import 'layout/container';
+@import 'layout/positioning';
+
+// Import modules
 @import 'modules/notes';
 @import 'modules/notes-nav';
 @import 'modules/site-header';
-@import 'modules/ui-view';
