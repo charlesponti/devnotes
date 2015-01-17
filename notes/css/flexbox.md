@@ -1,4 +1,4 @@
-# Flex Box
+## Flex Box
 
 <iframe height='350' scrolling='no' src='//codepen.io/theponti/embed/KwWJwm/' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/theponti/pen/KwWJwm/'>KwWJwm</a> by CJ Ponti (<a href='http://codepen.io/theponti'>@theponti</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
@@ -11,6 +11,8 @@ applications, the flexible box model provides an improvement over the block mode
 in that it does not use floats, nor do the flex container's margins collapse with
 the margins of its contents.
 
-# Cool Tools
-[Flexbox Playground](http://demo.agektmr.com/flexbox/)
+**Play with Flexboxes**  
+
+[Flexbox Playground](http://demo.agektmr.com/flexbox/)  
+
 [Flexy Boxes](http://the-echoplex.net/flexyboxes/)
