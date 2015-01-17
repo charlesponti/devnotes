@@ -123,7 +123,15 @@ gulp.task('clean', function(done) {
 });
 
 gulp.task('build', function() {
-  return runSequence('clean', 'vendor', 'css', 'markdown', 'html', 'js');
+  return runSequence(
+    'clean',
+    'vendor',
+    'images',
+    'css',
+    'markdown',
+    'html',
+    'js'
+  );
 });
 
 gulp.task('build:prod', function() {
