@@ -1,7 +1,5 @@
 # Classes
 
-![Class Tree](/public/images/ruby/class_tree.jpg)
-
 ```ruby
 	class Car
 		attr_accessor :make
