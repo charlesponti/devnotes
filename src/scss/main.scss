@@ -1,8 +1,9 @@
 @import 'base/variables';
 @import 'base/elements';
 
-@import 'modules/notes';
-@import 'modules/nav';
-@import 'modules/navside';
-@import 'modules/ui-view';
 @import 'modules/list-group';
+@import 'modules/navside';
+@import 'modules/notes';
+@import 'modules/notes-nav';
+@import 'modules/site-header';
+@import 'modules/ui-view';
