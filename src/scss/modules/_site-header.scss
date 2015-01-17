@@ -22,15 +22,12 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
     }
 
     a {
+        color: white;
         // Make <a> display block to take padding
         display: block;
-        padding: 16px 20px 10px;
-        // Remove underline
-        text-decoration: none;
-        // Change color
-        color: white;
         font-weight: 600;
-        line-height: 19px;
+        line-height: 50px;
+        text-decoration: none;
         &.brand {
             font-size: 19;
             padding-left: 19px;
@@ -45,17 +42,18 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
     }
 
     .toggle {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        display: block;
-        cursor: pointer;
         background-color: $tomato;
-        color: white;
-        max-height: 50px;
-        padding: 14px 27px;
         border: 0px;
+        color: white;
+        cursor: pointer;
+        display: block;
         font-size: 16px;
+        line-height: 50px;
+        max-height: 50px;
+        padding: 0 20px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
         &:hover {
             background-color: $dark-tomato;
         }
