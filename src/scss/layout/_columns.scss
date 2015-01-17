@@ -1,0 +1,38 @@
+$col-base-width: 8.3333333333%;
+
+.col {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding: 0 15px;
+}
+
+@mixin make-columns($name, $count, $width) {
+  @while $count > 0 {
+    .col.#{$name}-#{$count} {
+      width: $width;
+      margin-left: 0;
+    }
+    .col.#{$name}-pull-#{$count} {
+      right: $width;
+    }
+    .col.#{$name}-push-#{$count} {
+      left: $width;
+    }
+    .col.#{$name}-offset-#{$count} {
+      margin-left: $width;
+    }
+    $width: $width - $col-base-width;
+    $count: $count - 1;
+  }
+}
+
+@include make-columns('sm', 12, 100%);
+
+@media (min-width: $bp-mobile) {
+  @include make-columns('md', 12, 100%);
+}
+
+@media (min-width: $bp-tablet) {
+  @include make-columns('lg', 12, 100%);
+}
