@@ -7,6 +7,7 @@
 global.isProd = false;
 
 var fs = require('fs');
+var del = require('del');
 var gulp = require('gulp');
 var browserify = require('browserify');
 var $ = require('gulp-load-plugins')();
@@ -26,23 +27,29 @@ gulp.task('markdown', function() {
 });
 
 /**
- * @desc Add views files to Angular templateCache
+ * @desc Add .html files
  */
-gulp.task('views', function() {
+gulp.task('html', function() {
+  // Process index.html file
+  gulp.src(['src/index.html'])
+    .pipe($.minifyHtml({empty: true}))
+    .pipe(gulp.dest('dist'));
+
+  // Process Angular templates
   return gulp.src(['src/views/**/*.html'])
     .pipe($.angularTemplatecache({
       standalone: true,
       module: 'devnotes.notes'
     }))
-    .pipe(gulp.dest('src/scripts'));
+    .pipe(gulp.dest('src/js'));
 });
 
 /**
- * @desc Create browserify bundle
+ * @desc Process .js files
  */
 gulp.task('js', function() {
   return browserify({
-      entries: ['./src/scripts/main.js'],
+      entries: ['./src/js/main.js'],
       debug: global.isProd ? false : true,
       insertGlobals: true,
       fullPaths: true,
@@ -55,7 +62,7 @@ gulp.task('js', function() {
 });
 
 /**
- * @desc Styles task
+ * @desc Process .scss files
  */
 gulp.task('css', function() {
   return gulp.src(['./src/scss/main.scss'])
@@ -83,6 +90,15 @@ gulp.task('images', function() {
   .pipe($.size({title: 'images'}));
 });
 
+gulp.task('vendor', function() {
+  // Move highlightjs files to dist
+  return gulp.src([
+      'bower_components/highlightjs/styles/github.css',
+      'bower_components/highlightjs/highlight.pack.js'
+    ])
+    .pipe(gulp.dest('dist/vendor/highlight'));
+});
+
 /**
  * @desc Task to start development server
  */
@@ -90,17 +106,24 @@ gulp.task('serve', function() {
   browserSync({
     notify: false,
     logPrefix: 'Facade',
-    server: '.'
+    server: 'dist'
   });
 
   gulp.watch('notes/**/*.md', ['markdown', reload]);
-  gulp.watch('src/views/**/*.html', ['views' , reload]);
+  gulp.watch('src/**/*.html', ['html' , reload]);
   gulp.watch('src/scss/**/*.scss', ['css' , reload]);
-  gulp.watch('src/scripts/**/*.js', ['js', reload]);
+  gulp.watch('src/js/**/*.js', ['js', reload]);
+});
+
+/**
+ * @desc Clean dist directory
+ */
+gulp.task('clean', function(done) {
+  return del(['dist/*'], done);
 });
 
 gulp.task('build', function() {
-  return runSequence('css', 'markdown', 'views', 'js');
+  return runSequence('clean', 'vendor', 'css', 'markdown', 'html', 'js');
 });
 
 gulp.task('build:prod', function() {
