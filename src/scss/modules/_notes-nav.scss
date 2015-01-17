@@ -1,0 +1,26 @@
+/**
+ *  Site Navigation
+ *  @group modules
+ **/
+.notes-nav {
+  background-color: $tomato;
+  color: white;
+  height: 100%;
+  max-width: 250px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(250px, 0);
+  transition: transform .3s linear;
+  width: 250px;
+  z-index: 100;
+
+  a {
+    color: inherit;
+  }
+
+  &.open {
+    transform: translate(0px, 0);
+  }
+
+}
