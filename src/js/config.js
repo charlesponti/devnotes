@@ -21,8 +21,7 @@ module.exports = function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'home.html',
-      controller: 'HomeController as HomeCtrl'
+      templateUrl: 'home.html'
     })
     .state('about', {
       url: '/about',
