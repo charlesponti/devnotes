@@ -2,58 +2,60 @@
 
 html,
 body {
-  background-color: $color-white;
-  box-sizing: border-box;
-  font-family: $font-default;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-size: 16px;
+    box-sizing: border-box;
+    font-family: $font-default;
+    font-size: 18px;
+    font-smoothing: antialiased;
+    height: 100%;
+    line-height: 20px;
+    margin: 0; // Remove default margin.
+    padding: 0;
+    // Prevent iOS text size adjust after orientation change, without disabling
+    // user zoom.
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
 }
 
 // apply a natural box layout model to all elements
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    // Enable touch scrolling on mobile
+    -webkit-overflow-scrolling: touch;
+    box-sizing: inherit;
 }
 
 button {
-  font-family: $font-default;
+    font-family: $font-default;
 }
 
 blockquote {
-  background-color: $color-white-dark;
-  display: block;
-  line-height: 24px;
-  margin: 0;
-  padding: 18px;
-  position: relative;
-  width: 100%;
+    background-color: $color-white-dark;
+    display: block;
+    line-height: 24px;
+    margin: 0;
+    padding: 18px;
+    position: relative;
+    width: 100%;
 }
 
 cite {
-  bottom: 5px;
-  position: absolute;
-  right: 5px;
-}
-
-pre > .hljs {
-  display: block;
-  font-size: 1.1em;
+    bottom: 5px;
+    position: absolute;
+    right: 5px;
 }
 
 .hljs {
-  display: inline;
+    display: inline;
 }
 
 mark {
-  background-color: $color-white-dark;
-  margin: 0 .3em;
-  padding: .1em .3em;
+    background-color: $color-white-dark;
+    margin: 0 .3em;
+    padding: .1em .3em;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
