@@ -1,4 +1,4 @@
-# Methodology
+## Methodology
 
 There are countless different CSS methodologies poking around today, from
 **SMACSS** to **BEM** to **WHOZAMAWHATSIT**. The particular methodology that
