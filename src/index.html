@@ -29,22 +29,26 @@
     <header class="site-header">
       <a class="brand" ui-sref="home">Dev Notes</a>
       <button class="toggle"> Notes </button>
-      <nav>
-        <ul>
-          <li>
-              <a ui-sref="tools">Tools</a>
-          </li>
-          <li>
-              <a ui-sref="about">About</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <nav class="notes-nav">
         <ul>
-          <li>
+            <li>
                 <a ui-sref="css">CSS</a>
+                <ul>
+                    <li><a ui-sref="css.naming">Naming</a></li>
+                    <li><a ui-sref="css.box-model">Box Model</a></li>
+                    <li><a ui-sref="css.position">Position</a></li>
+                    <li><a ui-sref="css.flexbox">Flexbox</a></li>
+                    <li><a ui-sref="css.methodology">Methodology</a></li>
+                    <li><a ui-sref="css.bem">BEM</a></li>
+                    <li><a ui-sref="css.smacss">SMACSS</a></li>
+                    <li><a ui-sref="css.oocss">OOCSS</a></li>
+                    <li><a ui-sref="css.transition">Transition</a></li>
+                    <li><a ui-sref="css.transform">Transform</a></li>
+                    <li><a ui-sref="css.animation">Animation</a></li>
+                    <li><a ui-sref="css.media-queries">Media Queries</a></li>
+                </ul>
             </li>
             <li class="hide">
                 <a ui-sref="databases">Databases</a>
@@ -72,6 +76,18 @@
             </li>
             <li>
                 <a ui-sref="ruby">Ruby</a>
+                <ul>
+                    <li><a ui-sref="ruby.arrays"> Arrays</a></li>
+                    <li><a ui-sref="ruby.classes">Classes</a></li>
+                    <li><a ui-sref="ruby.comparators">Comparators</a></li>
+                    <li><a ui-sref="ruby.conditionals">Conditionals</a></li>
+                    <li><a ui-sref="ruby.hash">Hash</a></li>
+                    <li><a ui-sref="ruby.iteration">Iteration</a></li>
+                    <li><a ui-sref="ruby.methods">Methods</a></li>
+                    <li><a ui-sref="ruby.modules">Modules</a></li>
+                    <li><a ui-sref="ruby.strings">Strings</a></li>
+                    <li><a ui-sref="ruby.variabes">Variables</a></li>
+                </ul>
             </li>
             <li class="hide">
                 <a ui-sref="swift">Swift</a>
@@ -82,10 +98,18 @@
             <li class="hide">
                 <a ui-sref="webdev">Web Development</a>
             </li>
+            <li>
+                <a ui-sref="tools">Tools</a>
+            </li>
+            <li>
+                <a ui-sref="about">About</a>
+            </li>
         </ul>
     </nav>
 
-    <main ui-view></main>
+    <main>
+        <div ui-view></div>
+    </main>
 
     <script src="vendor/highlight/highlight.pack.js"></script>
     <script src="js/main.js"></script>
