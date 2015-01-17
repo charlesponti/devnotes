@@ -14,21 +14,4 @@
         text-align: justify
     }
 
-    & > [ui-view] {
-        height: 100%;
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    @media all and (min-width: $bp-large) {
-        nav.side {
-            float: left;
-            width: 30%;
-        }
-        [ui-view] {
-            float: right;
-            width: 70%;
-            padding-left: 20px;
-        }
-    }
 }
