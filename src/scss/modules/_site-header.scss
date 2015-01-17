@@ -1,0 +1,98 @@
+$tomato: rgba(255, 99, 71, 0.98);
+$dark-tomato: rgba(216, 84, 61, 0.98);
+
+.site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    background-color: $tomato;
+    font-size: 18px;
+    line-height: 40px;
+    transition: all .3s linear;
+
+    ul {
+      list-style-type: none;
+      margin: 3.7em 0 0 11em;
+      padding: 0;
+      transition: all 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    a {
+        // Make <a> display block to take padding
+        display: block;
+        padding: 16px 20px 10px;
+        // Remove underline
+        text-decoration: none;
+        // Change color
+        color: white;
+        font-weight: 600;
+        line-height: 1.2em;
+        &.brand {
+            font-size: 1.2em;
+            padding-left: 1.2em;
+        }
+        &:hover {
+            background-color: $dark-tomato;
+        }
+    }
+
+    &.open {
+        transform: translate(-250px, 0);
+    }
+
+    .toggle {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        cursor: pointer;
+        background-color: $tomato;
+        color: white;
+        max-height: 3em;
+        padding: 14px 27px;
+        border: 0em;
+        font-size: 1em;
+        &:hover {
+            background-color: $dark-tomato;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:active + ul {
+          margin-left: 0em;
+        }
+    }
+
+    @media all and (min-width: $bp-tablet) {
+        position: fixed;
+        max-height: 55px;
+        overflow: hidden;
+        // Make <nav> full width of page
+        width: 100%;
+        ul {
+          // Kill margin
+          margin: 0;
+        }
+        li {
+            // Align <li> items
+            display: inline-block;
+        }
+        a {
+            // Bump font-sizes
+            font-size: 18px;
+        }
+        .brand {
+            // Adjust padding on so .brand takes up same amout of
+            // space as regular links
+            padding: 13px 20px 10px;
+            font-size: 20px;
+        }
+        // Hide <button>
+        button {
+            display: none;
+        }
+    }
+
+}
