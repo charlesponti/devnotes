@@ -1,24 +1,20 @@
-
-// Colors
-$color-night-shade: #2C3E50;
-$color-concrete: #95A5A6;
-
 // Font sizes
+$font-size: 16px;
 $font-small: 13px !default;
-$font-base: 16px  !default;
+$font-base: 16px !default;
 $font-medium: 20px !default;
 $font-large: 26px !default;
 $font-xl: 42px !default;
 $font-xxl: 68px !default;
 $font-xxxl: 110px !default;
 
-// Line height
-$line-height: 26px !default;
-
 // Font family
 $font-default: 'lato', Helvetica, Arial, sans-serif !default;
 $font-icon: 'icons' !default;
 $font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Line height
+$line-height: ($font-size * 2) !default;
 
 // Breakpoints
 $bp-small: 480px !default;
