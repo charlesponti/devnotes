@@ -1,8 +1,17 @@
+/**
+ * This file defines the style for the .container class
+ * @example
+ * <div class="container">
+ *  <div class="col s-12 m-10 m-off-1 l-8 l-off-2">
+ *      <!-- content -->
+ *  </div>
+ * </div>
+ * @group layout
+ **/
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    // Should take up 100% of its parent container
+    width: 100%;
+    padding: 0px 15px;
 }
 
 .clearfix:before,
@@ -26,18 +35,18 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    padding: 0px 30px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    padding: 0px 50px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    padding: 0px 100px;
   }
 }
