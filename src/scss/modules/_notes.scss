@@ -1,18 +1,18 @@
+/**
+ * This file contains the styles for the .notes module
+ * @group modules
+ */
 .notes {
 
     h1 {
-        font-size: 36px;
+        font-size: 50px;
         text-align: center;
+        line-height: 108px;
         a {
-            color: black;
+            color: $color-black;
             cursor: pointer;
             text-decoration: none;
         }
-    }
-
-    p {
-        text-align: justify;
-        line-height: 35px;
     }
 
 }
