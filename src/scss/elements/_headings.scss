@@ -1,0 +1,38 @@
+/**
+ * This file contains the styles of the HTML heading elements:
+ * h1, h2, h3, h4, h5, h6
+ * @group elements
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 0;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 55px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+h6 {
+  font-size: 10px;
+  line-height: 15px;
+}
