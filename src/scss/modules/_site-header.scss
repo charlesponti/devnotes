@@ -67,7 +67,7 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
         }
     }
 
-    @media all and (min-width: $bp-tablet) {
+    @media all and (min-width: $bp-medium) {
         ul {
           // Kill margin
           margin: 0;
