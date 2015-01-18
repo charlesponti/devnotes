@@ -21,8 +21,7 @@ $font-icon: 'icons' !default;
 $font-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 // Breakpoints
-$bp-tablet: 768px !default;
-$bp-mobile: 480px !default;
+$bp-small: 480px !default;
 $bp-medium: 620px !default;
 $bp-large: 800px !default;
 $bp-xlarge: 1600px !default;
@@ -39,7 +38,7 @@ $header-font-color: $color-concrete;
 $navdrawer-background: $color-night-shade;
 $navdrawer-font-color: $color-concrete;
 $navdrawer-link-transition: background-color 0.2s ease-out;
-$navdrawer-transition: transform 250ms ease-out;
+$navdrawer-transition: transform 190ms ease-out;
 $navdrawer-width: 280px !default;
 
 // Header & Nav
