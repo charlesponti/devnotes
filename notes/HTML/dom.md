@@ -1,12 +1,11 @@
 ## The DOM
 
-* Document Object Model
+The DOM, which stands for Document Object Model, is a representation of how the browser how constructed the "tree" of the HTML elements of the web page upon load.
 
-* The browser constructs this "tree" of the HTML elements on the page upon load.
-
-* If the DOM is changed via JS, the changes are reflected instantly without page refresh. This includes new/removed elements, attributes, and stylesThis is frequently used for notifications and updating the DOM to reflect new data, such as how GMail notifies you that you have a new email without having to refresh the page.
+If the DOM is changed via JS, the changes are reflected instantly without page refresh. This includes new and removed elements, attributes, and styles, which is frequently used for such things as updating the DOM to reflect new data and notifying the user of relevant information, such as how GMail notifies the user that they have a new email without having to refresh the page.
 
 ## Elements
+
 ~~~html
 <tagname> content </tagname>
 ~~~
