@@ -1,15 +1,25 @@
+$col-count: 12;
+$col-max-width: 100%;
 $col-base-width: 8.3333333333%;
-$column-names: ("s", "m", "l");
 
+/**
+ * @desc This is the base column class, meant to be used instead of a container
+ */
 .col {
   position: relative;
   height: 100%;
-  max-width: 100%;
+  max-width: $col-max-width;
   min-height: 1px;
   float: left;
   padding: 0 15px;
 }
 
+/**
+ * @desc Construct column classes with given name starting at given width
+ * @param  {String} $name  Name of column class, such as 'small'
+ * @param  {Number} $count Number of columns to construct
+ * @param  {Number} $width Starting with
+ */
 @mixin make-columns($name, $count, $width) {
   @while $count > 0 {
     .col.#{$name}-#{$count} {
@@ -32,16 +42,16 @@ $column-names: ("s", "m", "l");
 
 // .s-* column styles take effect at any viewport or device size and are only
 // overwritten if a .m-* or .l-* class is used after it
-@include make-columns('s', 12, 100%);
+@include make-columns('s', $col-count, $col-max-width);
 
 // .m-* column styles should only take effect after the mobile breakpoint has
 // been surpassed.
 @media (min-width: $bp-medium) {
-  @include make-columns('m', 12, 100%);
+  @include make-columns('m', $col-count, $col-max-width);
 }
 
 // .l-* column styles should only take effect after the tablet breakpoint has
 // been surpassed.
 @media (min-width: $bp-large) {
-  @include make-columns('l', 12, 100%);
+  @include make-columns('l', $col-count, $col-max-width);
 }
