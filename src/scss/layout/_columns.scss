@@ -1,4 +1,5 @@
 $col-base-width: 8.3333333333%;
+$column-names: ("s", "m", "l");
 
 .col {
   position: relative;
@@ -19,7 +20,7 @@ $col-base-width: 8.3333333333%;
     .col.#{$name}-push-#{$count} {
       left: $width;
     }
-    .col.#{$name}-offset-#{$count} {
+    .col.#{$name}-off-#{$count} {
       margin-left: $width;
     }
     $width: $width - $col-base-width;
@@ -27,12 +28,18 @@ $col-base-width: 8.3333333333%;
   }
 }
 
-@include make-columns('sm', 12, 100%);
+// .s-* column styles take effect at any viewport or device size and are only
+// overwritten if a .m-* or .l-* class is used after it
+@include make-columns('s', 12, 100%);
 
-@media (min-width: $bp-mobile) {
-  @include make-columns('md', 12, 100%);
+// .m-* column styles should only take effect after the mobile breakpoint has
+// been surpassed.
+@media (min-width: $bp-small) {
+  @include make-columns('m', 12, 100%);
 }
 
-@media (min-width: $bp-tablet) {
-  @include make-columns('lg', 12, 100%);
+// .l-* column styles should only take effect after the tablet breakpoint has
+// been surpassed.
+@media (min-width: $bp-medium) {
+  @include make-columns('l', 12, 100%);
 }
