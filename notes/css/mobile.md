@@ -1,10 +1,12 @@
 ## Mobile
 
-In this section, we will go over some common pitfalls and helpful pointers when optimising your site for mobile.
+In this section, we will cover some common pitfalls and helpful pointers when optimising a web sites and web apps  for mobile.
 
-Increasing the performance of web site or applications on mobile devices has become a top priority for many developers, largely due to the fact that an ever-increasing amount of users are performing their web browsing via their phones or tablets.
+Increasing the performance of web sites and web apps on mobile devices has become a top priority for many developers. This is largely due to the fact that an ever-increasing amount of users are doing their web browsing via their phones or tablets, as opposed to only when they are sitting in front of their computer. This is not to say that one should favor either mobile or desktop design, but that a good web developer with always take both into account. The user interface should be smooth, dynamic, intuitive, and performant, whether it is being viewed on a 5-inch screen, a 15-inch screen, or a 27-inch screen.
 
-There are two types of performance that have to be taken into account. One is **perceived performance** and the other is **software performace**. The software performance of your site is how quickly your site's JavaScript and CSS code is executed. The perceived performance of your site is how fast the user feels your site is. This perceived performance, as studies have shown, can be the make or break indicator of whether users will or will not have a pleasure experience using your web site or application. So with that, let's go through some of the most common issues one must tackle when designing a great mobile experience.
+#### Interface versus Software Performance?
+
+There are two types of performance that have to be taken into account. One is **interface performance** and the other is **software performace**. The software performance of your site is how quickly your site's HTML, JavaScript and CSS code is executed. The interface performance of your site, on the other hand. is how fast the user feels your site is. This interface performance, as studies have shown, can be the make or break indicator of whether users will or will not have a pleasure experience using your web site or application. So with that, let's go through some of the most common issues one must tackle when designing a great mobile experience.
 
 ### Scrolling
 
