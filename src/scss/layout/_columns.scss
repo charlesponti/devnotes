@@ -3,6 +3,8 @@ $column-names: ("s", "m", "l");
 
 .col {
   position: relative;
+  height: 100%;
+  max-width: 100%;
   min-height: 1px;
   float: left;
   padding: 0 15px;

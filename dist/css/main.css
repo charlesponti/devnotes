@@ -1,1 +1,898 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);html,body{box-sizing:border-box;font-family:'lato',Helvetica,Arial,sans-serif;font-size:18px;font-smoothing:antialiased;height:100%;line-height:20px;margin:0;padding:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:100%}*,*:before,*:after{-webkit-overflow-scrolling:touch;box-sizing:inherit}button{font-family:'lato',Helvetica,Arial,sans-serif}.hide{display:none}h1,h2,h3,h4,h5,h6{margin:8px 0}h1{font-size:50px;line-height:55px}h2{font-size:30px;line-height:35px}h3{font-size:25px;line-height:30px}h4{font-size:20px;line-height:25px}h5{font-size:17px;line-height:22px}h6{font-size:10px;line-height:15px}ul{padding:16px}main{position:fixed;top:50px;padding-bottom:108px!important;display:block;-webkit-transition:-webkit-transform 190ms ease-out;transition:transform 190ms ease-out;height:100%;width:100%;overflow:auto}main.open{-webkit-transform:translate(-250px,0);-ms-transform:translate(-250px,0);transform:translate(-250px,0)}@media all and (min-width:620px){main{padding:75px 0;width:90%}}pre>.hljs{display:block;font-size:1.1em}@media screen and (max-width:480px){pre{font-size:10px}}p{line-height:32px;text-align:justify}blockquote{background-color:#ecf0f1;display:block;line-height:24px;margin:0;padding:18px;position:relative;width:100%}cite{bottom:5px;position:absolute;right:5px}.hljs{display:inline}mark{background-color:#ecf0f1;margin:0 .3em;padding:.1em .3em}.col{position:relative;min-height:1px;float:left;padding:0 15px}.col.s-12{width:100%;margin-left:0}.col.s-pull-12{right:100%}.col.s-push-12{left:100%}.col.s-off-12{margin-left:100%}.col.s-11{width:91.6666666667%;margin-left:0}.col.s-pull-11{right:91.6666666667%}.col.s-push-11{left:91.6666666667%}.col.s-off-11{margin-left:91.6666666667%}.col.s-10{width:83.3333333334%;margin-left:0}.col.s-pull-10{right:83.3333333334%}.col.s-push-10{left:83.3333333334%}.col.s-off-10{margin-left:83.3333333334%}.col.s-9{width:75.0000000001%;margin-left:0}.col.s-pull-9{right:75.0000000001%}.col.s-push-9{left:75.0000000001%}.col.s-off-9{margin-left:75.0000000001%}.col.s-8{width:66.6666666668%;margin-left:0}.col.s-pull-8{right:66.6666666668%}.col.s-push-8{left:66.6666666668%}.col.s-off-8{margin-left:66.6666666668%}.col.s-7{width:58.3333333335%;margin-left:0}.col.s-pull-7{right:58.3333333335%}.col.s-push-7{left:58.3333333335%}.col.s-off-7{margin-left:58.3333333335%}.col.s-6{width:50.0000000002%;margin-left:0}.col.s-pull-6{right:50.0000000002%}.col.s-push-6{left:50.0000000002%}.col.s-off-6{margin-left:50.0000000002%}.col.s-5{width:41.6666666669%;margin-left:0}.col.s-pull-5{right:41.6666666669%}.col.s-push-5{left:41.6666666669%}.col.s-off-5{margin-left:41.6666666669%}.col.s-4{width:33.3333333336%;margin-left:0}.col.s-pull-4{right:33.3333333336%}.col.s-push-4{left:33.3333333336%}.col.s-off-4{margin-left:33.3333333336%}.col.s-3{width:25.0000000003%;margin-left:0}.col.s-pull-3{right:25.0000000003%}.col.s-push-3{left:25.0000000003%}.col.s-off-3{margin-left:25.0000000003%}.col.s-2{width:16.666666667%;margin-left:0}.col.s-pull-2{right:16.666666667%}.col.s-push-2{left:16.666666667%}.col.s-off-2{margin-left:16.666666667%}.col.s-1{width:8.3333333337%;margin-left:0}.col.s-pull-1{right:8.3333333337%}.col.s-push-1{left:8.3333333337%}.col.s-off-1{margin-left:8.3333333337%}@media (min-width:620px){.col.m-12{width:100%;margin-left:0}.col.m-pull-12{right:100%}.col.m-push-12{left:100%}.col.m-off-12{margin-left:100%}.col.m-11{width:91.6666666667%;margin-left:0}.col.m-pull-11{right:91.6666666667%}.col.m-push-11{left:91.6666666667%}.col.m-off-11{margin-left:91.6666666667%}.col.m-10{width:83.3333333334%;margin-left:0}.col.m-pull-10{right:83.3333333334%}.col.m-push-10{left:83.3333333334%}.col.m-off-10{margin-left:83.3333333334%}.col.m-9{width:75.0000000001%;margin-left:0}.col.m-pull-9{right:75.0000000001%}.col.m-push-9{left:75.0000000001%}.col.m-off-9{margin-left:75.0000000001%}.col.m-8{width:66.6666666668%;margin-left:0}.col.m-pull-8{right:66.6666666668%}.col.m-push-8{left:66.6666666668%}.col.m-off-8{margin-left:66.6666666668%}.col.m-7{width:58.3333333335%;margin-left:0}.col.m-pull-7{right:58.3333333335%}.col.m-push-7{left:58.3333333335%}.col.m-off-7{margin-left:58.3333333335%}.col.m-6{width:50.0000000002%;margin-left:0}.col.m-pull-6{right:50.0000000002%}.col.m-push-6{left:50.0000000002%}.col.m-off-6{margin-left:50.0000000002%}.col.m-5{width:41.6666666669%;margin-left:0}.col.m-pull-5{right:41.6666666669%}.col.m-push-5{left:41.6666666669%}.col.m-off-5{margin-left:41.6666666669%}.col.m-4{width:33.3333333336%;margin-left:0}.col.m-pull-4{right:33.3333333336%}.col.m-push-4{left:33.3333333336%}.col.m-off-4{margin-left:33.3333333336%}.col.m-3{width:25.0000000003%;margin-left:0}.col.m-pull-3{right:25.0000000003%}.col.m-push-3{left:25.0000000003%}.col.m-off-3{margin-left:25.0000000003%}.col.m-2{width:16.666666667%;margin-left:0}.col.m-pull-2{right:16.666666667%}.col.m-push-2{left:16.666666667%}.col.m-off-2{margin-left:16.666666667%}.col.m-1{width:8.3333333337%;margin-left:0}.col.m-pull-1{right:8.3333333337%}.col.m-push-1{left:8.3333333337%}.col.m-off-1{margin-left:8.3333333337%}}@media (min-width:800px){.col.l-12{width:100%;margin-left:0}.col.l-pull-12{right:100%}.col.l-push-12{left:100%}.col.l-off-12{margin-left:100%}.col.l-11{width:91.6666666667%;margin-left:0}.col.l-pull-11{right:91.6666666667%}.col.l-push-11{left:91.6666666667%}.col.l-off-11{margin-left:91.6666666667%}.col.l-10{width:83.3333333334%;margin-left:0}.col.l-pull-10{right:83.3333333334%}.col.l-push-10{left:83.3333333334%}.col.l-off-10{margin-left:83.3333333334%}.col.l-9{width:75.0000000001%;margin-left:0}.col.l-pull-9{right:75.0000000001%}.col.l-push-9{left:75.0000000001%}.col.l-off-9{margin-left:75.0000000001%}.col.l-8{width:66.6666666668%;margin-left:0}.col.l-pull-8{right:66.6666666668%}.col.l-push-8{left:66.6666666668%}.col.l-off-8{margin-left:66.6666666668%}.col.l-7{width:58.3333333335%;margin-left:0}.col.l-pull-7{right:58.3333333335%}.col.l-push-7{left:58.3333333335%}.col.l-off-7{margin-left:58.3333333335%}.col.l-6{width:50.0000000002%;margin-left:0}.col.l-pull-6{right:50.0000000002%}.col.l-push-6{left:50.0000000002%}.col.l-off-6{margin-left:50.0000000002%}.col.l-5{width:41.6666666669%;margin-left:0}.col.l-pull-5{right:41.6666666669%}.col.l-push-5{left:41.6666666669%}.col.l-off-5{margin-left:41.6666666669%}.col.l-4{width:33.3333333336%;margin-left:0}.col.l-pull-4{right:33.3333333336%}.col.l-push-4{left:33.3333333336%}.col.l-off-4{margin-left:33.3333333336%}.col.l-3{width:25.0000000003%;margin-left:0}.col.l-pull-3{right:25.0000000003%}.col.l-push-3{left:25.0000000003%}.col.l-off-3{margin-left:25.0000000003%}.col.l-2{width:16.666666667%;margin-left:0}.col.l-pull-2{right:16.666666667%}.col.l-push-2{left:16.666666667%}.col.l-off-2{margin-left:16.666666667%}.col.l-1{width:8.3333333337%;margin-left:0}.col.l-pull-1{right:8.3333333337%}.col.l-push-1{left:8.3333333337%}.col.l-off-1{margin-left:8.3333333337%}}.container{width:100%;padding:0 15px}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}@media (min-width:480px){.container{padding:0 30px}}@media (min-width:620px){.container{padding:0 50px}}@media (min-width:800px){.container{padding:0 100px}}.text-center{text-align:center}.drop-1x{margin-top:16px}.drop-2x{margin-top:32px}.drop-3x{margin-top:48px}.drop-4x{margin-top:64px}.drop-5x{margin-top:80px}.drop-6x{margin-top:96px}.drop-7x{margin-top:112px}.drop-8x{margin-top:128px}.drop-9x{margin-top:144px}.drop-10x{margin-top:160px}.notes h1{font-size:50px;text-align:center;line-height:108px}.notes h1 a{color:#000;cursor:pointer;text-decoration:none}.notes-nav{background-color:tomato;color:#fff;height:100%;max-width:250px;overflow-y:auto;padding-left:10px;position:fixed;right:0;-webkit-transform:translate(250px,0);-ms-transform:translate(250px,0);transform:translate(250px,0);-webkit-transition:-webkit-transform 190ms ease-out;transition:transform 190ms ease-out;width:250px;z-index:100}.notes-nav ul{padding:0;list-style-type:none}.notes-nav li,.notes-nav li>ul{padding-left:10px}.notes-nav a{display:block;color:inherit;cursor:pointer;padding:3px 0 3px 5px;text-decoration:none}.notes-nav a:hover{background-color:#f42500}.notes-nav.open{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}.site-header{position:fixed;top:0;left:0;height:50px;background-color:rgba(255,99,71,.98);font-size:18px;line-height:40px;-webkit-transition:-webkit-transform 190ms ease-out;transition:transform 190ms ease-out;width:100%;z-index:100;overflow:hidden}.site-header ul{list-style-type:none;margin:59.2px 0 0 176px;padding:0;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out;width:100%}.site-header a{color:#fff;display:inline-block;font-weight:600;line-height:50px;text-decoration:none}.site-header a.brand{font-size:19;padding-left:19px;width:95%}.site-header a:hover{background-color:rgba(216,84,61,.98)}.site-header.open{-webkit-transform:translate(-250px,0);-ms-transform:translate(-250px,0);transform:translate(-250px,0)}.site-header .toggle{background-color:rgba(255,99,71,.98);border:0;color:#fff;cursor:pointer;display:block;font-size:16px;line-height:50px;max-height:50px;padding:0 20px;position:absolute;right:0;top:0}.site-header .toggle:hover{background-color:rgba(216,84,61,.98)}.site-header .toggle:focus{outline:none}.site-header .toggle:active+ul{margin-left:0}@media all and (min-width:620px){.site-header ul{margin:0}.site-header li{display:inline-block}.site-header a{font-size:18px}.site-header .brand{font-size:20px}.site-header button{display:none}}
+@import url(http://fonts.googleapis.com/css?family=Lato);
+/**
+ * This file contains the colors used throught the project.
+ **/
+/* line 4, /Users/ponti/Development/projects/devnotes/src/scss/base/_elements.scss */
+html, body {
+  box-sizing: border-box;
+  font-family: 'lato', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-smoothing: antialiased;
+  height: 100%;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100%; }
+
+/* line 23, /Users/ponti/Development/projects/devnotes/src/scss/base/_elements.scss */
+*, *:before, *:after {
+  -webkit-overflow-scrolling: touch;
+  box-sizing: inherit; }
+
+/* line 29, /Users/ponti/Development/projects/devnotes/src/scss/base/_elements.scss */
+button {
+  font-family: 'lato', Helvetica, Arial, sans-serif; }
+
+/* line 33, /Users/ponti/Development/projects/devnotes/src/scss/base/_elements.scss */
+.hide {
+  display: none; }
+
+/**
+ * This file contains the styles of the HTML heading elements:
+ * h1, h2, h3, h4, h5, h6
+ * @group elements
+ */
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/elements/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 0; }
+
+/* line 10, /Users/ponti/Development/projects/devnotes/src/scss/elements/_headings.scss */
+h1 {
+  font-size: 50px;
+  line-height: 55px; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/elements/_headings.scss */
+h2 {
+  font-size: 30px;
+  line-height: 35px; }
+
+/* line 20, /Users/ponti/Development/projects/devnotes/src/scss/elements/_headings.scss */
+h3 {
+  font-size: 25px;
+  line-height: 30px; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/elements/_headings.scss */
+h4 {
+  font-size: 20px;
+  line-height: 25px; }
+
+/* line 30, /Users/ponti/Development/projects/devnotes/src/scss/elements/_headings.scss */
+h5 {
+  font-size: 17px;
+  line-height: 22px; }
+
+/* line 35, /Users/ponti/Development/projects/devnotes/src/scss/elements/_headings.scss */
+h6 {
+  font-size: 10px;
+  line-height: 15px; }
+
+/**
+ * @group Elements
+ */
+/* line 4, /Users/ponti/Development/projects/devnotes/src/scss/elements/_lists.scss */
+ul {
+  padding: 16px; }
+
+/* line 1, /Users/ponti/Development/projects/devnotes/src/scss/elements/_main.scss */
+main {
+  position: fixed;
+  top: 50px;
+  padding-bottom: 108px !important;
+  display: block;
+  -webkit-transition: -webkit-transform 190ms ease-out;
+          transition: transform 190ms ease-out;
+  height: 100%;
+  width: 100%;
+  overflow: auto; }
+  /* line 11, /Users/ponti/Development/projects/devnotes/src/scss/elements/_main.scss */
+  main.open {
+    -webkit-transform: translate(-250px, 0);
+        -ms-transform: translate(-250px, 0);
+            transform: translate(-250px, 0); }
+  @media all and (min-width: 620px) {
+    main {
+      padding: 75px 0;
+      width: 90%; } }
+
+/**
+ * <pre>
+ * @group elements
+ */
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/elements/_pre.scss */
+pre > .hljs {
+  display: block;
+  font-size: 1.1em; }
+@media screen and (max-width: 480px) {
+  pre {
+    font-size: 10px; } }
+
+/**
+ * This file contains the styles for HTML text content elements:
+ * blockquote, cite, code, mark, p, pre
+ */
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/elements/_text.scss */
+p {
+  line-height: 32px;
+  text-align: justify; }
+
+/* line 11, /Users/ponti/Development/projects/devnotes/src/scss/elements/_text.scss */
+blockquote {
+  background-color: #ecf0f1;
+  display: block;
+  line-height: 24px;
+  margin: 0;
+  padding: 18px;
+  position: relative;
+  width: 100%; }
+
+/* line 21, /Users/ponti/Development/projects/devnotes/src/scss/elements/_text.scss */
+cite {
+  bottom: 5px;
+  position: absolute;
+  right: 5px; }
+
+/* line 27, /Users/ponti/Development/projects/devnotes/src/scss/elements/_text.scss */
+.hljs {
+  display: inline; }
+
+/* line 31, /Users/ponti/Development/projects/devnotes/src/scss/elements/_text.scss */
+mark {
+  background-color: #ecf0f1;
+  margin: 0 .3em;
+  padding: .1em .3em; }
+
+/* line 4, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  min-height: 1px;
+  float: left;
+  padding: 0 15px; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-12 {
+  width: 100%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-12 {
+  right: 100%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-12 {
+  left: 100%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-12 {
+  margin-left: 100%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-11 {
+  width: 91.6666666667%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-11 {
+  right: 91.6666666667%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-11 {
+  left: 91.6666666667%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-11 {
+  margin-left: 91.6666666667%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-10 {
+  width: 83.3333333334%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-10 {
+  right: 83.3333333334%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-10 {
+  left: 83.3333333334%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-10 {
+  margin-left: 83.3333333334%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-9 {
+  width: 75.0000000001%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-9 {
+  right: 75.0000000001%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-9 {
+  left: 75.0000000001%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-9 {
+  margin-left: 75.0000000001%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-8 {
+  width: 66.6666666668%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-8 {
+  right: 66.6666666668%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-8 {
+  left: 66.6666666668%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-8 {
+  margin-left: 66.6666666668%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-7 {
+  width: 58.3333333335%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-7 {
+  right: 58.3333333335%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-7 {
+  left: 58.3333333335%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-7 {
+  margin-left: 58.3333333335%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-6 {
+  width: 50.0000000002%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-6 {
+  right: 50.0000000002%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-6 {
+  left: 50.0000000002%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-6 {
+  margin-left: 50.0000000002%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-5 {
+  width: 41.6666666669%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-5 {
+  right: 41.6666666669%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-5 {
+  left: 41.6666666669%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-5 {
+  margin-left: 41.6666666669%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-4 {
+  width: 33.3333333336%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-4 {
+  right: 33.3333333336%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-4 {
+  left: 33.3333333336%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-4 {
+  margin-left: 33.3333333336%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-3 {
+  width: 25.0000000003%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-3 {
+  right: 25.0000000003%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-3 {
+  left: 25.0000000003%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-3 {
+  margin-left: 25.0000000003%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-2 {
+  width: 16.666666667%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-2 {
+  right: 16.666666667%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-2 {
+  left: 16.666666667%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-2 {
+  margin-left: 16.666666667%; }
+
+/* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-1 {
+  width: 8.3333333337%;
+  margin-left: 0; }
+
+/* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-pull-1 {
+  right: 8.3333333337%; }
+
+/* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-push-1 {
+  left: 8.3333333337%; }
+
+/* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+.col.s-off-1 {
+  margin-left: 8.3333333337%; }
+
+@media (min-width: 620px) {
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-12 {
+    width: 100%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-12 {
+    right: 100%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-12 {
+    left: 100%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-12 {
+    margin-left: 100%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-11 {
+    width: 91.6666666667%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-11 {
+    right: 91.6666666667%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-11 {
+    left: 91.6666666667%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-11 {
+    margin-left: 91.6666666667%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-10 {
+    width: 83.3333333334%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-10 {
+    right: 83.3333333334%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-10 {
+    left: 83.3333333334%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-10 {
+    margin-left: 83.3333333334%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-9 {
+    width: 75.0000000001%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-9 {
+    right: 75.0000000001%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-9 {
+    left: 75.0000000001%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-9 {
+    margin-left: 75.0000000001%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-8 {
+    width: 66.6666666668%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-8 {
+    right: 66.6666666668%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-8 {
+    left: 66.6666666668%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-8 {
+    margin-left: 66.6666666668%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-7 {
+    width: 58.3333333335%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-7 {
+    right: 58.3333333335%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-7 {
+    left: 58.3333333335%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-7 {
+    margin-left: 58.3333333335%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-6 {
+    width: 50.0000000002%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-6 {
+    right: 50.0000000002%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-6 {
+    left: 50.0000000002%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-6 {
+    margin-left: 50.0000000002%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-5 {
+    width: 41.6666666669%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-5 {
+    right: 41.6666666669%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-5 {
+    left: 41.6666666669%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-5 {
+    margin-left: 41.6666666669%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-4 {
+    width: 33.3333333336%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-4 {
+    right: 33.3333333336%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-4 {
+    left: 33.3333333336%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-4 {
+    margin-left: 33.3333333336%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-3 {
+    width: 25.0000000003%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-3 {
+    right: 25.0000000003%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-3 {
+    left: 25.0000000003%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-3 {
+    margin-left: 25.0000000003%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-2 {
+    width: 16.666666667%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-2 {
+    right: 16.666666667%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-2 {
+    left: 16.666666667%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-2 {
+    margin-left: 16.666666667%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-1 {
+    width: 8.3333333337%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-pull-1 {
+    right: 8.3333333337%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-push-1 {
+    left: 8.3333333337%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.m-off-1 {
+    margin-left: 8.3333333337%; } }
+
+@media (min-width: 800px) {
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-12 {
+    width: 100%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-12 {
+    right: 100%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-12 {
+    left: 100%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-12 {
+    margin-left: 100%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-11 {
+    width: 91.6666666667%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-11 {
+    right: 91.6666666667%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-11 {
+    left: 91.6666666667%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-11 {
+    margin-left: 91.6666666667%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-10 {
+    width: 83.3333333334%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-10 {
+    right: 83.3333333334%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-10 {
+    left: 83.3333333334%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-10 {
+    margin-left: 83.3333333334%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-9 {
+    width: 75.0000000001%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-9 {
+    right: 75.0000000001%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-9 {
+    left: 75.0000000001%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-9 {
+    margin-left: 75.0000000001%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-8 {
+    width: 66.6666666668%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-8 {
+    right: 66.6666666668%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-8 {
+    left: 66.6666666668%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-8 {
+    margin-left: 66.6666666668%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-7 {
+    width: 58.3333333335%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-7 {
+    right: 58.3333333335%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-7 {
+    left: 58.3333333335%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-7 {
+    margin-left: 58.3333333335%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-6 {
+    width: 50.0000000002%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-6 {
+    right: 50.0000000002%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-6 {
+    left: 50.0000000002%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-6 {
+    margin-left: 50.0000000002%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-5 {
+    width: 41.6666666669%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-5 {
+    right: 41.6666666669%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-5 {
+    left: 41.6666666669%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-5 {
+    margin-left: 41.6666666669%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-4 {
+    width: 33.3333333336%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-4 {
+    right: 33.3333333336%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-4 {
+    left: 33.3333333336%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-4 {
+    margin-left: 33.3333333336%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-3 {
+    width: 25.0000000003%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-3 {
+    right: 25.0000000003%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-3 {
+    left: 25.0000000003%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-3 {
+    margin-left: 25.0000000003%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-2 {
+    width: 16.666666667%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-2 {
+    right: 16.666666667%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-2 {
+    left: 16.666666667%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-2 {
+    margin-left: 16.666666667%; }
+  /* line 15, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-1 {
+    width: 8.3333333337%;
+    margin-left: 0; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-pull-1 {
+    right: 8.3333333337%; }
+  /* line 22, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-push-1 {
+    left: 8.3333333337%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/layout/_columns.scss */
+  .col.l-off-1 {
+    margin-left: 8.3333333337%; } }
+
+/**
+ * This file defines the style for the .container class
+ * @example
+ * <div class="container">
+ *  <div class="col s-12 m-10 m-off-1 l-8 l-off-2">
+ *      <!-- content -->
+ *  </div>
+ * </div>
+ * @group layout
+ **/
+/* line 11, /Users/ponti/Development/projects/devnotes/src/scss/layout/_container.scss */
+.container {
+  width: 100%;
+  padding: 0px 15px; }
+
+/* line 24, /Users/ponti/Development/projects/devnotes/src/scss/layout/_container.scss */
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+  content: " ";
+  display: table; }
+
+/* line 32, /Users/ponti/Development/projects/devnotes/src/scss/layout/_container.scss */
+.clearfix:after, .container:after, .container-fluid:after, .row:after {
+  clear: both; }
+
+@media (min-width: 480px) {
+  /* line 37, /Users/ponti/Development/projects/devnotes/src/scss/layout/_container.scss */
+  .container {
+    padding: 0px 30px; } }
+
+@media (min-width: 620px) {
+  /* line 43, /Users/ponti/Development/projects/devnotes/src/scss/layout/_container.scss */
+  .container {
+    padding: 0px 50px; } }
+
+@media (min-width: 800px) {
+  /* line 49, /Users/ponti/Development/projects/devnotes/src/scss/layout/_container.scss */
+  .container {
+    padding: 0px 100px; } }
+
+/* line 1, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.text-center {
+  text-align: center; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-1x {
+  margin-top: 16px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-2x {
+  margin-top: 32px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-3x {
+  margin-top: 48px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-4x {
+  margin-top: 64px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-5x {
+  margin-top: 80px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-6x {
+  margin-top: 96px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-7x {
+  margin-top: 112px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-8x {
+  margin-top: 128px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-9x {
+  margin-top: 144px; }
+
+/* line 6, /Users/ponti/Development/projects/devnotes/src/scss/layout/_positioning.scss */
+.drop-10x {
+  margin-top: 160px; }
+
+/**
+ * This file contains the styles for the .notes module
+ * @group modules
+ */
+/* line 7, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes.scss */
+.notes h1 {
+  font-size: 50px;
+  text-align: center;
+  line-height: 108px; }
+  /* line 11, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes.scss */
+  .notes h1 a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none; }
+
+/**
+ *  Site Navigation
+ *  @group modules
+ **/
+/* line 5, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes-nav.scss */
+.notes-nav {
+  background-color: tomato;
+  color: white;
+  height: 100%;
+  max-width: 250px;
+  overflow-y: auto;
+  padding-left: 10px;
+  position: fixed;
+  right: 0px;
+  -webkit-transform: translate(250px, 0);
+      -ms-transform: translate(250px, 0);
+          transform: translate(250px, 0);
+  -webkit-transition: -webkit-transform 190ms ease-out;
+          transition: transform 190ms ease-out;
+  width: 250px;
+  z-index: 100; }
+  /* line 19, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes-nav.scss */
+  .notes-nav ul {
+    padding: 0;
+    list-style-type: none; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes-nav.scss */
+  .notes-nav li, .notes-nav li > ul {
+    padding-left: 10px; }
+  /* line 29, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes-nav.scss */
+  .notes-nav a {
+    display: block;
+    color: inherit;
+    cursor: pointer;
+    padding: 3px 0 3px 5px;
+    text-decoration: none; }
+    /* line 35, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes-nav.scss */
+    .notes-nav a:hover {
+      background-color: #f42500; }
+  /* line 40, /Users/ponti/Development/projects/devnotes/src/scss/modules/_notes-nav.scss */
+  .notes-nav.open {
+    -webkit-transform: translate(0px, 0);
+        -ms-transform: translate(0px, 0);
+            transform: translate(0px, 0); }
+
+/* line 4, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: rgba(255, 99, 71, 0.98);
+  font-size: 18px;
+  line-height: 40px;
+  -webkit-transition: -webkit-transform 190ms ease-out;
+          transition: transform 190ms ease-out;
+  width: 100%;
+  z-index: 100;
+  overflow: hidden; }
+  /* line 17, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+  .site-header ul {
+    list-style-type: none;
+    margin: 59.2px 0 0 176px;
+    padding: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+    width: 100%; }
+  /* line 25, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+  .site-header a {
+    color: white;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 50px;
+    text-decoration: none; }
+    /* line 32, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header a.brand {
+      font-size: 19;
+      padding-left: 19px;
+      width: 95%; }
+    /* line 37, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header a:hover {
+      background-color: rgba(216, 84, 61, 0.98); }
+  /* line 42, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+  .site-header.open {
+    -webkit-transform: translate(-250px, 0);
+        -ms-transform: translate(-250px, 0);
+            transform: translate(-250px, 0); }
+  /* line 46, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+  .site-header .toggle {
+    background-color: rgba(255, 99, 71, 0.98);
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    line-height: 50px;
+    max-height: 50px;
+    padding: 0 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+    /* line 59, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header .toggle:hover {
+      background-color: rgba(216, 84, 61, 0.98); }
+    /* line 62, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header .toggle:focus {
+      outline: none; }
+    /* line 65, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header .toggle:active + ul {
+      margin-left: 0px; }
+  @media all and (min-width: 620px) {
+    /* line 71, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header ul {
+      margin: 0; }
+    /* line 75, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header li {
+      display: inline-block; }
+    /* line 79, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header a {
+      font-size: 18px; }
+    /* line 83, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header .brand {
+      font-size: 20px; }
+    /* line 89, /Users/ponti/Development/projects/devnotes/src/scss/modules/_site-header.scss */
+    .site-header button {
+      display: none; } }
+
