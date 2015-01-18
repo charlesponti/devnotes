@@ -9,7 +9,7 @@ $dark-tomato: rgba(216, 84, 61, 0.98);
     background-color: $tomato;
     font-size: 18px;
     line-height: 40px;
-    transition: all .3s linear;
+    transition: $navdrawer-transition;
     width: 100%;
     z-index: 100;
     overflow: hidden;
