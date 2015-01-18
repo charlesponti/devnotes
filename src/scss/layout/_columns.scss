@@ -34,12 +34,12 @@ $column-names: ("s", "m", "l");
 
 // .m-* column styles should only take effect after the mobile breakpoint has
 // been surpassed.
-@media (min-width: $bp-small) {
+@media (min-width: $bp-medium) {
   @include make-columns('m', 12, 100%);
 }
 
 // .l-* column styles should only take effect after the tablet breakpoint has
 // been surpassed.
-@media (min-width: $bp-medium) {
+@media (min-width: $bp-large) {
   @include make-columns('l', 12, 100%);
 }
