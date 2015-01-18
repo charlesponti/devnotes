@@ -33,19 +33,19 @@
   clear: both;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $bp-small) {
   .container {
     padding: 0px 30px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $bp-medium) {
   .container {
     padding: 0px 50px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $bp-large) {
   .container {
     padding: 0px 100px;
   }
