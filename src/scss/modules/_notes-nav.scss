@@ -12,7 +12,7 @@
     position: fixed;
     right: 0px;
     transform: translate(250px, 0);
-    transition: transform .3s linear;
+    transition: $navdrawer-transition;
     width: 250px;
     z-index: 100;
 
