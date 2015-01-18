@@ -16,7 +16,7 @@
     <meta name="description" content="A collection of programming notes.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="imagesifavicons/mages/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
@@ -83,9 +83,9 @@
             <li>
                 <a ui-sref="html">HTML</a>
                 <ul>
-                    <li>
-                        <a ui-sref="html.dom">DOM</a>
-                    </li>
+                    <li><a ui-sref="html.dom">DOM</a></li>
+                    <li><a ui-sref="html.app-cache">App Cache</a></li>
+                    <li><a ui-sref="html.performance">Performance</a></li>
                 </ul>
             </li>
             <li class="hide">
@@ -134,7 +134,7 @@
         <div ui-view></div>
     </main>
 
-    <script src="vendor/highlight/highlight.pack.js"></script>
-    <script src="js/main.js"></script>
+    <script src="vendor/highlight/highlight.pack.js" defer></script>
+    <script src="js/main.js" async></script>
 </body>
 </html>
