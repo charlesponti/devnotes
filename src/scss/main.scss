@@ -4,9 +4,11 @@
 @import 'base/elements';
 
 // Import elements
+@import 'elements/headings';
 @import 'elements/lists';
 @import 'elements/main';
 @import 'elements/pre';
+@import 'elements/text';
 
 // Import layout
 @import 'layout/columns';
