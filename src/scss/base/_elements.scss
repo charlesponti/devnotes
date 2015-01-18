@@ -30,32 +30,6 @@ button {
     font-family: $font-default;
 }
 
-blockquote {
-    background-color: $color-white-dark;
-    display: block;
-    line-height: 24px;
-    margin: 0;
-    padding: 18px;
-    position: relative;
-    width: 100%;
-}
-
-cite {
-    bottom: 5px;
-    position: absolute;
-    right: 5px;
-}
-
-.hljs {
-    display: inline;
-}
-
-mark {
-    background-color: $color-white-dark;
-    margin: 0 .3em;
-    padding: .1em .3em;
-}
-
 .hide {
     display: none;
 }
