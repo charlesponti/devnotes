@@ -1,19 +1,17 @@
 main {
-    position: fixed;
-    top: 50px;
-    padding-bottom: 108px !important;
-    display: block;
-    transition: $navdrawer-transition;
     height: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    overflow: auto;
+    padding-bottom: $font-size;
+    transition: $navdrawer-transition;
 
     &.open {
         transform: translate(-250px, 0);
     }
 
     @media all and (min-width: $bp-medium) {
-        padding: 75px 0;
-        width: 90%;
+        margin-top: 50px;
     }
 }
