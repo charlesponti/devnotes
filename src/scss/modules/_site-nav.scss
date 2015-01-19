@@ -2,7 +2,7 @@
  *  Site Navigation
  *  @group modules
  **/
-.notes-nav {
+.site-nav {
     background-color: $color-tomato;
     color: white;
     height: 100%;
@@ -11,6 +11,7 @@
     padding-left: 10px;
     position: fixed;
     right: 0px;
+    top: 0px;
     transform: translate(250px, 0);
     transition: $navdrawer-transition;
     width: 250px;
