@@ -5,24 +5,24 @@
 
   var main = find('main');
   var header = find('.site-header');
-  var notesBtn = find('.site-header .toggle');
-  var notesNav = find('.notes-nav');
+  var navBtn = find('.site-header .toggle');
+  var nav = find('.site-nav');
 
   function closeMenu() {
     header.classList.remove('open');
-    notesNav.classList.remove('open');
+    nav.classList.remove('open');
     main.classList.remove('open');
   }
 
   function toggleMenu() {
     header.classList.toggle('open');
-    notesNav.classList.toggle('open');
+    nav.classList.toggle('open');
     main.classList.toggle('open');
   }
 
-  notesBtn.addEventListener('click', toggleMenu);
+  navBtn.addEventListener('click', toggleMenu);
   main.addEventListener('click', closeMenu);
-  notesNav.addEventListener('click', function(event) {
+  nav.addEventListener('click', function(event) {
     if (/LI|A/.test(event.target.nodeName)) {
       return closeMenu();
     }
