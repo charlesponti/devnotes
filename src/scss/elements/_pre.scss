@@ -3,12 +3,14 @@
  * @group elements
  */
 pre {
-    & > .hljs {
+    font-size: $font-size;
+
+    .hljs {
         display: block;
-        font-size: 1.1em;
+        font-size: inherit;
     }
 
     @media screen and (max-width: $bp-small) {
-        font-size: 10px;
+        font-size: $font-size - 4 !important;
     }
 }
