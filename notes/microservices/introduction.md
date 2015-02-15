@@ -26,6 +26,19 @@ Because each service runs autonomously, each one can use a set of technologies t
 ### Resilient
 One common problem when building large applications is preventing the failure in one part of the application from spreading into other, seemingly unrelated parts of the application. Because microservices are built to be autonomous and decoupled, this problem is largely prevented. This means that when one services fails, the other services should not fail, making problems easier to diagnose and fix quickly.
 
+### Deployment? That was easy!
+Because microservices are small, changes to them can be made quickly and those changes can be deployed quickly as well. This greatly reduces the time between an idea being presented and that functionality being in the hands of the application's users. In a more monolithic or tightly-coupled application, an idea may be seemingly easy to implement, but more thorough testing will have to be done to ensure that the change has not broken all of the other parts of the monolith.
+
+It has also been shown that making services small and deployment easy leads to more deployments being made more frequently. Many times multiple deployments of multiple of services will be shipped in one day. What this proves is that a service-oriented architecture greatly increases the confidence of the development and development operations team in the software that they are producing and distributing.
+
+### Composability, a.k.a Lego Fun
+Something that becomes apparent when you begin to break your application up by the jobs that certain sections of code perform is that there may be quite a bit of code duplication, whereby multiple chunks of code are doing the same job. This means that you can replace all of those separate chunks of code, that may be tightly-coupled to the code they are found within, by one resilient, potentially easier-to-test, service.
+
+Also, because the job of each service is clearly defined, they can reused easily, both by the team of developers that created it and by other teams, both inside or outside your organisation.
+
+### No More Legacy Software
+One aspect of microservices that all developers will love is they completely remove the possibility of legacy code. "How do they do that?," you may ask. Anyone who has worked at a company which has existed for a decent length of time has come across come blob of legacy code. The reason that legacy code is there is because its big, difficult to debug, and works just well enough that no one has to touch it. Also, everyone is afraid to touch it because if they poke it the wrong way, the company's entire system will come crashing down to the ground like a house of cards. With a service-oriented architecture, no single service can ever become so large and terrifying that it is difficult to rip out and replace.
+
 ## Facets of Microservice Architectures
 
 * **Domain-Driven Design**
