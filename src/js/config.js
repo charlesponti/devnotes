@@ -18,6 +18,10 @@ module.exports = function($stateProvider, $urlRouterProvider) {
   // Add HTML states
   states.html($stateProvider);
 
+  // Add Microservices states
+  states.microservices($stateProvider);
+
+  // Add base states
   $stateProvider
     .state('home', {
       url: '/',
