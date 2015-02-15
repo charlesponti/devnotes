@@ -21,6 +21,11 @@ Each service should be able to be upgraded or changed without making an upgrade 
 #### Technology Choice Flexibility
 Because each service runs autonomously, each one can use a set of technologies that are best suited to doing that job. This can mean that a two services may use different databases, one NoSQL and one SQL, without there being any issue. Services can be written in different languages, use different versions of the same dependency or framework, and so on.
 
+## Benefits
+
+### Resilient
+One common problem when building large applications is preventing the failure in one part of the application from spreading into other, seemingly unrelated parts of the application. Because microservices are built to be autonomous and decoupled, this problem is largely prevented. This means that when one services fails, the other services should not fail, making problems easier to diagnose and fix quickly.
+
 ## Facets of Microservice Architectures
 
 * **Domain-Driven Design**
