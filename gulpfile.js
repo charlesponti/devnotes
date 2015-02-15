@@ -35,6 +35,9 @@ gulp.task('html', function() {
     .pipe($.minifyHtml({empty: true}))
     .pipe(gulp.dest('dist'));
 
+  gulp.src(['src/views/**/*.html'])
+    .pipe(gulp.dest('dist/views'));
+
   // Process Angular templates
   return gulp.src(['src/views/**/*.html'])
     .pipe($.angularTemplatecache({
