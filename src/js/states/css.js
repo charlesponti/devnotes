@@ -6,6 +6,10 @@ module.exports = function(stateProvider) {
       url: '/css',
       templateUrl: 'pages/css.html'
     })
+    .state('css.intro', {
+      url: '',
+      templateUrl: 'notes/css/introduction.html'
+    })
     .state('css.animation', {
       url: '/animation',
       templateUrl: 'notes/css/animation.html',
