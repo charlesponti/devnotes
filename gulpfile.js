@@ -85,10 +85,10 @@ gulp.task('css', function() {
 // Optimize Images
 gulp.task('images', function() {
   return gulp.src(['src/images/**/*'])
-  .pipe($.imagemin({
-    progressive: true,
-    interlaced: true
-  }))
+  //.pipe($.imagemin({
+  //  progressive: true,
+  //  interlaced: true
+  //}))
   .pipe(gulp.dest('dist/images'))
   .pipe($.size({title: 'images'}));
 });
