@@ -63,7 +63,6 @@
     "build:prod": "gulp build:prod",
     "preinstall": "npm cache clean && rm -rf node_modules && rm -rf bower_components",
     "postinstall": "bower install",
-    "deploy": "git subtree push --prefix dist origin gh-pages",
     "start": "gulp build && gulp serve",
     "test": "/node_modules/karma/bin/karma test/karma.conf.js",
     "views": "gulp markdown && gulp views"
