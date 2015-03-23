@@ -34,6 +34,10 @@ module.exports = function($stateProvider, $urlRouterProvider) {
     .state('tools', {
       url: '/tools',
       templateUrl: 'notes/tools.html'
+    })
+    .state('react', {
+      url: '/react',
+      templateUrl: 'notes/Javascript/React/introduction.html'
     });
 
 };
